@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none;
+}
+
+.icon-sm {
+  width: 29px;
+  height: 29px;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.article-img {
+  height: 300px;
+}
+.article-img img {
+  height: 100%;
+  object-fit: cover;
+}
+.txt-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.c-pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 63.99em) {
+  .icon-sm {
+    width: 24px;
+    height: 24px;
+  }
+}
