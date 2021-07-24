@@ -6,10 +6,10 @@ const Header = ({ siteTitle }) => (
   <header id="header" className="site-header" role="banner">
     <div className="wrapper">
       <div className="row">
-        <a href="#" className="logo">
+        <a href="/" className="logo">
           <img src="images/logo.svg" alt="" />
         </a>
-        <a href="#" id="menu-toggle" className="menu-toggle">
+        <a href="" id="menu-toggle" className="menu-toggle">
           menu<span>close</span>
         </a>
         <div id="navigation" className="navigation">
@@ -22,72 +22,72 @@ const Header = ({ siteTitle }) => (
                     <div className="row">
                       <div className="col-wide-3">
                         <strong className="level1 parent">
-                          <a href="#">Platforms</a>
+                          <a href="/">Platforms</a>
                           <span className="toggle-menu" />
                         </strong>
                         <ul>
                           <li>
-                            <a href="#">Magento</a>
+                            <a href="/rbc-magento">Magento</a>
                           </li>
                           <li>
-                            <a href="#">Shopify</a>
+                            <a href="/">Shopify</a>
                           </li>
                           <li>
-                            <a href="#">BigCommerce</a>
+                            <a href="/">BigCommerce</a>
                           </li>
                           <li>
-                            <a href="#">WooCommerce</a>
+                            <a href="/">WooCommerce</a>
                           </li>
                           <li>
-                            <a href="#">Shopware</a>
+                            <a href="/">Shopware</a>
                           </li>
                         </ul>
                       </div>
                       <div className="col-wide-3">
                         <strong className="level1 parent">
-                          <a href="#">SEO &amp; Best Practice</a>
+                          <a href="/">SEO &amp; Best Practice</a>
                           <span className="toggle-menu" />
                         </strong>
                         <ul>
                           <li>
-                            <a href="#">SEO Audit</a>
+                            <a href="/">SEO Audit</a>
                           </li>
                           <li>
-                            <a href="#">Monthly SEO</a>
+                            <a href="/">Monthly SEO</a>
                           </li>
                           <li>
-                            <a href="#">Consultancy</a>
+                            <a href="/">Consultancy</a>
                           </li>
                         </ul>
                       </div>
                       <div className="col-wide-3">
                         <strong className="level1 parent">
-                          <a href="#">Audit</a>
+                          <a href="/">Audit</a>
                           <span className="toggle-menu" />
                         </strong>
                         <ul>
                           <li>
-                            <a href="#">Ecommerce Audit</a>
+                            <a href="/">Ecommerce Audit</a>
                           </li>
                           <li>
-                            <a href="#">Code &amp; Performance Audit</a>
+                            <a href="/">Code &amp; Performance Audit</a>
                           </li>
                           <li>
-                            <a href="#">UX &amp; CRO Audit</a>
+                            <a href="/">UX &amp; CRO Audit</a>
                           </li>
                           <li>
-                            <a href="#">Security Audit</a>
+                            <a href="/">Security Audit</a>
                           </li>
                         </ul>
                       </div>
                       <div className="col-wide-3">
                         <strong className="level1 parent">
-                          <a href="#">Call Me</a>
+                          <a href="/">Call Me</a>
                           <span className="toggle-menu" />
                         </strong>
                         <ul>
                           <li>
-                            <a href="#">Any time</a>
+                            <a href="/">Any time</a>
                           </li>
                           <li>
                             <a href="tel:07885910429" className="phone">
@@ -95,7 +95,7 @@ const Header = ({ siteTitle }) => (
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="button solid">
+                            <a href="/" className="button solid">
                               Let's Talk
                             </a>
                           </li>
@@ -112,50 +112,50 @@ const Header = ({ siteTitle }) => (
                     <div className="row">
                       <div className="col-wide-3">
                         <strong className="level1 parent">
-                          <a href="#" />
+                          <a href="/" />
                           <span className="toggle-menu" />
                         </strong>
                         <ul>
                           <li>
-                            <a href="#">Fashion</a>
+                            <a href="/">Fashion</a>
                           </li>
                           <li>
-                            <a href="#">Distributors</a>
+                            <a href="/">Distributors</a>
                           </li>
                           <li>
-                            <a href="#">Hobby</a>
+                            <a href="/">Hobby</a>
                           </li>
                           <li>
-                            <a href="#">Food &amp; Beverage</a>
+                            <a href="/">Food &amp; Beverage</a>
                           </li>
                           <li>
-                            <a href="#">Sports, Fitness and Wellbeing</a>
+                            <a href="/">Sports, Fitness and Wellbeing</a>
                           </li>
                           <li>
-                            <a href="#">Manufacturers</a>
+                            <a href="/">Manufacturers</a>
                           </li>
                         </ul>
                       </div>
                       <div className="col-wide-3">
                         <strong className="level1 parent">
-                          <a href="#" />
+                          <a href="/" />
                           <span className="toggle-menu" />
                         </strong>
                         <ul>
                           <li>
-                            <a href="#">Education</a>
+                            <a href="/">Education</a>
                           </li>
                           <li>
-                            <a href="#">Health &amp; Beauty</a>
+                            <a href="/">Health &amp; Beauty</a>
                           </li>
                           <li>
-                            <a href="#">Toys &amp; Games</a>
+                            <a href="/">Toys &amp; Games</a>
                           </li>
                           <li>
-                            <a href="#">Rpmotional Products</a>
+                            <a href="/">Rpmotional Products</a>
                           </li>
                           <li>
-                            <a href="#">Automotive</a>
+                            <a href="/">Automotive</a>
                           </li>
                         </ul>
                       </div>
@@ -164,18 +164,18 @@ const Header = ({ siteTitle }) => (
                 </div>
               </li>
               <li>
-                <a href="#main">Portfolio</a>
+                <a href="/portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#contact">Agency Support</a>
+                <a href="/agency-support">Agency Support</a>
               </li>
               <li>
-                <a href="#our-plans">Resources</a>
+                <a href="/resources">Resources</a>
               </li>
             </ul>
           </div>
         </div>
-        <a className="button small button-contact" href="#">
+        <a className="button small button-contact" href="/contact">
           Contact
         </a>
       </div>
