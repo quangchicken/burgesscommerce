@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import SubscribeEmail from "../presentComponents/SubscribeEmail"
 
 export default function Portfolio() {
   return (
@@ -393,47 +394,7 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-        <section className="newsletter-section bg-grey">
-          <div className="wrapper">
-            <div className="row-flex row-flex-aligncenter">
-              <div className="col-wide-6 text-left">
-                <h4 className="title">Subscribe for the latest updates</h4>
-                <p>
-                  free ecommerce tips, tricks and hacks non-salesy, never spammy
-                </p>
-              </div>
-              <div className="col-wide-6">
-                <div className="newsletter-form">
-                  <form>
-                    <ul>
-                      <li>
-                        <input
-                          type="email"
-                          name="contact[email]"
-                          placeholder="Your email address"
-                          id="newsletter-email"
-                          className="required"
-                          defaultValue
-                          autoCorrect="off"
-                          autoCapitalize="off"
-                        />
-                      </li>
-                      <li className="action">
-                        <button
-                          type="submit"
-                          name="commit"
-                          className="button secondary"
-                        >
-                          Subscribe
-                        </button>
-                      </li>
-                    </ul>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <SubscribeEmail className="newsletter-section bg-grey" />
       </main>
     </Layout>
   )

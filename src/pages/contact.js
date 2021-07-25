@@ -2,6 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import SubscribeEmail from "../presentComponents/SubscribeEmail"
+import TrustedBy from "../presentComponents/TrustedBy"
 
 export default function Contact() {
   return (
@@ -177,93 +179,7 @@ export default function Contact() {
             style={{ border: "none" }}
           />
         </section>
-        <section className="testimonials-carousel bg-blue text-center text-light padding-top padding-bottom">
-          <div className="wrapper">
-            <div className="heading">
-              <h4 className="title">
-                Trusted by store owners and agencies worldwide
-              </h4>
-              <img src="images/stars.svg" alt />
-              <p>
-                <strong>33</strong> Total reviews <strong>4.9</strong> Average
-                rating
-              </p>
-            </div>
-            <div className="row-flex owl-carousel">
-              <div className="item">
-                <div className="image">
-                  <img src="images/rating-star.svg" alt />
-                </div>
-                <div className="content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec laoreet elit sagittis turpis gravida, sed imperdiet
-                    enim ullamcorper. Ut vel cursus odio, eget scelerisque erat.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec laoreet elit sagittis turpis gravida, sed imperdiet
-                    enim ullamcorper. Ut vel cursus odio, eget scelerisque erat.
-                  </p>
-                </div>
-                <ul className="reviewer">
-                  <li>Client</li>
-                  <li>Trustpilot</li>
-                </ul>
-              </div>
-              <div className="item">
-                <div className="image">
-                  <img src="images/rating-star.svg" alt />
-                </div>
-                <div className="content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec laoreet elit sagittis turpis gravida, sed imperdiet
-                    enim ullamcorper. Ut vel cursus odio, eget scelerisque erat.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec laoreet elit sagittis turpis gravida, sed imperdiet
-                    enim ullamcorper. Ut vel cursus odio, eget scelerisque erat.
-                  </p>
-                </div>
-                <ul className="reviewer">
-                  <li>Client</li>
-                  <li>Trustpilot</li>
-                </ul>
-              </div>
-              <div className="item">
-                <div className="image">
-                  <img src="images/rating-star.svg" alt />
-                </div>
-                <div className="content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec laoreet elit sagittis turpis gravida, sed imperdiet
-                    enim ullamcorper. Ut vel cursus odio, eget scelerisque erat.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec laoreet elit sagittis turpis gravida, sed imperdiet
-                    enim ullamcorper. Ut vel cursus odio, eget scelerisque erat.
-                  </p>
-                </div>
-                <ul className="reviewer">
-                  <li>Client</li>
-                  <li>Trustpilot</li>
-                </ul>
-              </div>
-            </div>
-            <div className="row">
-              <a href="#" className="read-more">
-                <span className="icon">
-                  <i className="icon-director" />
-                </span>
-                Read My Reviews
-              </a>
-            </div>
-          </div>
-        </section>
+        <TrustedBy className="testimonials-carousel bg-blue text-center text-light padding-top padding-bottom" />
         <section className="line-bottom-right" />
         <section className="blog-features line-bottom-left">
           <div className="wrapper">
@@ -402,48 +318,7 @@ export default function Contact() {
             </div>
           </div>
         </section>
-        <section className="newsletter-section bg-grey">
-          <div className="wrapper">
-            <div className="row-flex row-flex-aligncenter">
-              <div className="col-wide-6 text-left">
-                <h4 className="title">Subscribe for the latest updates</h4>
-                <p>
-                  free ecommerce tips, tricks and hacks non-salesy, never spammy
-                </p>
-              </div>
-              <div className="col-wide-6">
-                <div className="newsletter-form">
-                  <form className>
-                    <div className="actions">
-                      <input
-                        type="email"
-                        name="contact[email]"
-                        placeholder="Your email address"
-                        id="newsletter-email"
-                        className="required"
-                        defaultValue
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                      <button
-                        type="submit"
-                        name="commit"
-                        className="button secondary"
-                      >
-                        Subscribe
-                      </button>
-                    </div>
-                    <span className="hide">Email address is required</span>
-                    <p className="text-light hide">
-                      <span className="hide">Thank you! </span>I’ll give you a
-                      call or email reply shortly to discuss your project
-                    </p>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <SubscribeEmail className="newsletter-section bg-grey" />
       </main>
     </Layout>
   )

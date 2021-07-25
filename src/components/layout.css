@@ -1442,7 +1442,6 @@ table tr:last-child td {
 }
 
 #progress-bar {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;

@@ -2,6 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Faq from "../presentComponents/Faq"
+import SubscribeEmail from "../presentComponents/SubscribeEmail"
 
 export default function RbcMagento() {
   return (
@@ -25,7 +27,7 @@ export default function RbcMagento() {
               </div>
               <div className="col-image text-center">
                 <div className="reviews-tripadvisor">
-                  <img src="images/tripadvisor.svg" alt />
+                  <img src="images/tripadvisor.svg" alt="" />
                   <p>
                     <strong>4.9</strong> Average rating, <strong>33</strong>{" "}
                     Total reviews
@@ -51,7 +53,7 @@ export default function RbcMagento() {
                   <img
                     loading="lazy"
                     src="images/thumbnail-rowan-rbc.png"
-                    alt
+                    alt=""
                   />
                 </picture>
               </div>
@@ -80,16 +82,16 @@ export default function RbcMagento() {
           <div className="wrapper">
             <div className="row-flex row-flex-aligncenter">
               <div className="item">
-                <img src="images/magento-certified-3-rbc.svg" alt />
+                <img src="images/magento-certified-3-rbc.svg" alt="" />
               </div>
               <div className="item">
-                <img src="images/magento-certified-2-rbc.svg" alt />
+                <img src="images/magento-certified-2-rbc.svg" alt="" />
               </div>
               <div className="item">
-                <img src="images/professional-rbc.svg" alt height={100} />
+                <img src="images/professional-rbc.svg" alt="" height={100} />
               </div>
               <div className="item hide-for-mobile">
-                <img src="images/google-partner-rbc.svg" alt />
+                <img src="images/google-partner-rbc.svg" alt="" />
               </div>
             </div>
           </div>
@@ -107,7 +109,7 @@ export default function RbcMagento() {
                   <img
                     loading="lazy"
                     src="images/magento-development.png"
-                    alt
+                    alt=""
                   />
                 </picture>
               </div>
@@ -131,7 +133,7 @@ export default function RbcMagento() {
                     <img
                       loading="lazy"
                       src="images/magento-development.png"
-                      alt
+                      alt=""
                     />
                   </picture>
                 </div>
@@ -214,7 +216,7 @@ export default function RbcMagento() {
                   <img
                     loading="lazy"
                     src="images/magento-seo-design-and-ux.png"
-                    alt
+                    alt=""
                   />
                 </picture>
               </div>
@@ -236,7 +238,7 @@ export default function RbcMagento() {
                     <img
                       loading="lazy"
                       src="images/magento-seo-design-and-ux.png"
-                      alt
+                      alt=""
                     />
                   </picture>
                 </div>
@@ -296,7 +298,7 @@ export default function RbcMagento() {
               <div className="col-wide-12">
                 <h4 className="title">Impressed? Get in touch</h4>
                 <div className="newsletter-form">
-                  <form className>
+                  <form className="">
                     <div className="actions">
                       <input
                         type="email"
@@ -304,7 +306,7 @@ export default function RbcMagento() {
                         placeholder="Your email address"
                         id="newsletter-email"
                         className="required"
-                        defaultValue
+                        defaultValue=""
                         autoCorrect="off"
                         autoCapitalize="off"
                       />
@@ -333,7 +335,7 @@ export default function RbcMagento() {
                     srcSet="images/magento-master.png"
                   />
                   <source srcSet="images/magento-master-mobile.png" />
-                  <img loading="lazy" src="images/magento-master.png" alt />
+                  <img loading="lazy" src="images/magento-master.png" alt="" />
                 </picture>
               </div>
               <div className="col-text text-dark">
@@ -373,7 +375,7 @@ export default function RbcMagento() {
                     srcSet="images/cols2-banner-1.png"
                   />
                   <source srcSet="images/cols2-banner-1-mobile.png" />
-                  <img loading="lazy" src="images/cols2-banner-1.png" alt />
+                  <img loading="lazy" src="images/cols2-banner-1.png" alt="" />
                 </picture>
               </div>
               <div className="col-text text-dark">
@@ -479,7 +481,7 @@ export default function RbcMagento() {
                     srcSet="images/aidastore.jpg"
                   />
                   <source srcSet="images/aidastore-mobile.jpg" />
-                  <img loading="lazy" src="images/aidastore.jpg" alt />
+                  <img loading="lazy" src="images/aidastore.jpg" alt="" />
                 </picture>
               </div>
               <div className="caption located-image text-center">
@@ -520,7 +522,7 @@ export default function RbcMagento() {
                     srcSet="images/logo-partner.jpg"
                   />
                   <source srcSet="images/logo-partner-mobile.png" />
-                  <img loading="lazy" src="images/logo-partner.jpg" alt />
+                  <img loading="lazy" src="images/logo-partner.jpg" alt="" />
                 </picture>
               </div>
             </div>
@@ -547,7 +549,7 @@ export default function RbcMagento() {
                         srcSet="images/aida-banner.jpg"
                       />
                       <source srcSet="images/aida-banner-mobile.jpg" />
-                      <img loading="lazy" src="images/aida-banner.jpg" alt />
+                      <img loading="lazy" src="images/aida-banner.jpg" alt="" />
                     </picture>
                   </div>
                 </div>
@@ -665,7 +667,7 @@ export default function RbcMagento() {
                       <img
                         loading="lazy"
                         src="images/postmark-banner.jpg"
-                        alt
+                        alt=""
                       />
                     </picture>
                   </div>
@@ -681,7 +683,7 @@ export default function RbcMagento() {
               <div className="col-wide-6">
                 <h4 className="title">Sound good? Get in touch</h4>
                 <div className="newsletter-form">
-                  <form className>
+                  <form className="">
                     <div className="actions">
                       <input
                         type="email"
@@ -689,7 +691,7 @@ export default function RbcMagento() {
                         placeholder="Your email address"
                         id="newsletter-email"
                         className="required"
-                        defaultValue
+                        defaultValue=""
                         autoCorrect="off"
                         autoCapitalize="off"
                       />
@@ -709,303 +711,7 @@ export default function RbcMagento() {
           </div>
         </section>
         <section className="line-bottom-left hide-for-desktop" />
-        <section className="faqs margin-top padding-bottom padding-top">
-          <div className="wrapper medium">
-            <div className="heading">
-              <h2 className="title text-center">Frequently Asked Questions</h2>
-            </div>
-            <div className="row">
-              <div
-                className="faq"
-                itemScope
-                itemType="https://schema.org/FAQPage"
-              >
-                <dl
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
-                  id="where-are-you-located"
-                >
-                  <dt itemProp="name" className>
-                    Where are you located?
-                  </dt>
-                  <dd
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <div itemProp="text">
-                      <p>
-                        No. I’ve worked in the field of ecommerce as an
-                        independent contractor for many years which means I have
-                        have a wide range of expertise and skills to draw on.
-                      </p>
-                      <p>
-                        I work with professional Magento designers to build
-                        beautiful Magento websites that convert very well.
-                      </p>
-                      <p>
-                        If it’s related to ecommerce, it’s likely I can help,
-                        whether it’s SEO advice, marketing advice, platform
-                        migration consultation, hosting and management, security
-                        consultation, third party integrations, data
-                        optimisation, conversion optimisation, data feeds etc.
-                      </p>
-                    </div>
-                  </dd>
-                </dl>
-                <dl
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
-                  id="are-you-able-to-meet-clients"
-                >
-                  <dt itemProp="name" className>
-                    Are you able to meet clients?
-                  </dt>
-                  <dd
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                    style={{ display: "none" }}
-                  >
-                    <div itemProp="text">
-                      <p>
-                        No. I’ve worked in the field of ecommerce as an
-                        independent contractor for many years which means I have
-                        have a wide range of expertise and skills to draw on.
-                      </p>
-                      <p>
-                        I work with professional Magento designers to build
-                        beautiful Magento websites that convert very well.
-                      </p>
-                      <p>
-                        If it’s related to ecommerce, it’s likely I can help,
-                        whether it’s SEO advice, marketing advice, platform
-                        migration consultation, hosting and management, security
-                        consultation, third party integrations, data
-                        optimisation, conversion optimisation, data feeds etc.
-                      </p>
-                    </div>
-                  </dd>
-                </dl>
-                <dl
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
-                  id="when-can-get-you-get-started-on-my-project"
-                >
-                  <dt itemProp="name" className>
-                    When can get you get started on my project?
-                  </dt>
-                  <dd
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <div itemProp="text">
-                      <p>
-                        No. I’ve worked in the field of ecommerce as an
-                        independent contractor for many years which means I have
-                        have a wide range of expertise and skills to draw on.
-                      </p>
-                      <p>
-                        I work with professional Magento designers to build
-                        beautiful Magento websites that convert very well.
-                      </p>
-                      <p>
-                        If it’s related to ecommerce, it’s likely I can help,
-                        whether it’s SEO advice, marketing advice, platform
-                        migration consultation, hosting and management, security
-                        consultation, third party integrations, data
-                        optimisation, conversion optimisation, data feeds etc.
-                      </p>
-                    </div>
-                  </dd>
-                </dl>
-                <dl
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
-                  id="is-magento-the-right-platform-for-me"
-                >
-                  <dt itemProp="name" className>
-                    Is Magento the right platform for me?
-                  </dt>
-                  <dd
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <div itemProp="text">
-                      <p>
-                        No. I’ve worked in the field of ecommerce as an
-                        independent contractor for many years which means I have
-                        have a wide range of expertise and skills to draw on.
-                      </p>
-                      <p>
-                        I work with professional Magento designers to build
-                        beautiful Magento websites that convert very well.
-                      </p>
-                      <p>
-                        If it’s related to ecommerce, it’s likely I can help,
-                        whether it’s SEO advice, marketing advice, platform
-                        migration consultation, hosting and management, security
-                        consultation, third party integrations, data
-                        optimisation, conversion optimisation, data feeds etc.
-                      </p>
-                    </div>
-                  </dd>
-                </dl>
-                <dl
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
-                  id="what-sort-of-clients-do-you-work-with"
-                >
-                  <dt itemProp="name" className>
-                    What sort of clients do you work with?
-                  </dt>
-                  <dd
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <div itemProp="text">
-                      <p>
-                        No. I’ve worked in the field of ecommerce as an
-                        independent contractor for many years which means I have
-                        have a wide range of expertise and skills to draw on.
-                      </p>
-                      <p>
-                        I work with professional Magento designers to build
-                        beautiful Magento websites that convert very well.
-                      </p>
-                      <p>
-                        If it’s related to ecommerce, it’s likely I can help,
-                        whether it’s SEO advice, marketing advice, platform
-                        migration consultation, hosting and management, security
-                        consultation, third party integrations, data
-                        optimisation, conversion optimisation, data feeds etc.
-                      </p>
-                    </div>
-                  </dd>
-                </dl>
-                <dl
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
-                  id="how-do-you-price-work"
-                >
-                  <dt itemProp="name" className>
-                    How do you price work?
-                  </dt>
-                  <dd
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <div itemProp="text">
-                      <p>
-                        No. I’ve worked in the field of ecommerce as an
-                        independent contractor for many years which means I have
-                        have a wide range of expertise and skills to draw on.
-                      </p>
-                      <p>
-                        I work with professional Magento designers to build
-                        beautiful Magento websites that convert very well.
-                      </p>
-                      <p>
-                        If it’s related to ecommerce, it’s likely I can help,
-                        whether it’s SEO advice, marketing advice, platform
-                        migration consultation, hosting and management, security
-                        consultation, third party integrations, data
-                        optimisation, conversion optimisation, data feeds etc.
-                      </p>
-                    </div>
-                  </dd>
-                </dl>
-                <dl
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
-                  id="do-you-only-do-magento-development"
-                >
-                  <dt itemProp="name" className>
-                    Do you only do Magento development?
-                  </dt>
-                  <dd
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <div itemProp="text">
-                      <p>
-                        No. I’ve worked in the field of ecommerce as an
-                        independent contractor for many years which means I have
-                        have a wide range of expertise and skills to draw on.
-                      </p>
-                      <p>
-                        I work with professional Magento designers to build
-                        beautiful Magento websites that convert very well.
-                      </p>
-                      <p>
-                        If it’s related to ecommerce, it’s likely I can help,
-                        whether it’s SEO advice, marketing advice, platform
-                        migration consultation, hosting and management, security
-                        consultation, third party integrations, data
-                        optimisation, conversion optimisation, data feeds etc.
-                      </p>
-                    </div>
-                  </dd>
-                </dl>
-                <dl
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
-                  id="how-do-you-manage-tasks"
-                >
-                  <dt itemProp="name" className>
-                    How do you manage tasks?
-                  </dt>
-                  <dd
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <div itemProp="text">
-                      <p>
-                        No. I’ve worked in the field of ecommerce as an
-                        independent contractor for many years which means I have
-                        have a wide range of expertise and skills to draw on.
-                      </p>
-                      <p>
-                        I work with professional Magento designers to build
-                        beautiful Magento websites that convert very well.
-                      </p>
-                      <p>
-                        If it’s related to ecommerce, it’s likely I can help,
-                        whether it’s SEO advice, marketing advice, platform
-                        migration consultation, hosting and management, security
-                        consultation, third party integrations, data
-                        optimisation, conversion optimisation, data feeds etc.
-                      </p>
-                    </div>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <div className="row">
-              <div className="action bg-blue text-light">
-                <h6>Have a question?</h6>
-                <a href="#">Get In Touch</a>
-              </div>
-              <a href="#" className="read-more">
-                Read More
-              </a>
-            </div>
-          </div>
-        </section>
+        <Faq className="faqs margin-top padding-bottom padding-top" />
         <section className="form-contact line-bottom-left">
           <div className="wrapper full-width">
             <div className="row">
@@ -1017,7 +723,11 @@ export default function RbcMagento() {
                       srcSet="images/bg-banner-white.jpg"
                     />
                     <source srcSet="images/bg-banner-white.jpg" />
-                    <img loading="lazy" src="images/bg-banner-white.jpg" alt />
+                    <img
+                      loading="lazy"
+                      src="images/bg-banner-white.jpg"
+                      alt=""
+                    />
                   </picture>
                 </div>
               </div>
@@ -1035,7 +745,7 @@ export default function RbcMagento() {
                           <img
                             loading="lazy"
                             src="images/thumbnail-form-contact.png"
-                            alt
+                            alt=""
                           />
                         </picture>
                       </div>
@@ -1049,7 +759,7 @@ export default function RbcMagento() {
                         placeholder="Your email address *"
                         id="email"
                         className="required"
-                        defaultValue
+                        defaultValue=""
                         autoCorrect="off"
                         autoCapitalize="off"
                       />
@@ -1061,7 +771,7 @@ export default function RbcMagento() {
                         name="contact[number]"
                         placeholder="Your phone number"
                         id="phone"
-                        defaultValue
+                        defaultValue=""
                         autoCorrect="off"
                         autoCapitalize="off"
                       />
@@ -1073,7 +783,7 @@ export default function RbcMagento() {
                         name="contact[name]"
                         placeholder="Your name"
                         id="name"
-                        defaultValue
+                        defaultValue=""
                         autoCorrect="off"
                         autoCapitalize="off"
                       />
@@ -1085,13 +795,12 @@ export default function RbcMagento() {
                         name="contact[message]"
                         placeholder="Your message"
                         id="message"
-                        value
                         autoCorrect="off"
                         autoCapitalize="off"
                         defaultValue={""}
                       />
                     </li>
-                    <li className>
+                    <li className="">
                       <button
                         type="submit"
                         name="commit"
@@ -1106,48 +815,7 @@ export default function RbcMagento() {
             </div>
           </div>
         </section>
-        <section className="newsletter-section bg-grey">
-          <div className="wrapper">
-            <div className="row-flex row-flex-aligncenter">
-              <div className="col-wide-6 text-left">
-                <h4 className="title">Subscribe for the latest updates</h4>
-                <p>
-                  free ecommerce tips, tricks and hacks non-salesy, never spammy
-                </p>
-              </div>
-              <div className="col-wide-6">
-                <div className="newsletter-form">
-                  <form className>
-                    <div className="actions">
-                      <input
-                        type="email"
-                        name="contact[email]"
-                        placeholder="Your email address"
-                        id="newsletter-email"
-                        className="required"
-                        defaultValue
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                      <button
-                        type="submit"
-                        name="commit"
-                        className="button secondary"
-                      >
-                        Subscribe
-                      </button>
-                    </div>
-                    <span className="hide">Email address is required</span>
-                    <p className="text-dark">
-                      <span className="hide">Thank you! </span>I’ll give you a
-                      call or email reply shortly to discuss your project
-                    </p>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <SubscribeEmail className="newsletter-section bg-grey" />
       </main>
     </Layout>
   )

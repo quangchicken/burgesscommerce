@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "gatsby": "^3.10.1",
     "gatsby-plugin-disqus": "^1.2.2",
     "gatsby-plugin-gatsby-cloud": "^2.10.0",
@@ -15,6 +16,7 @@
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-source-cloudinary": "^0.1.14",
     "gatsby-source-filesystem": "^3.10.0",
+    "gatsby-transformer-cloudinary": "^2.2.4",
     "gatsby-transformer-sharp": "^3.10.0",
     "highlight.js": "^11.1.0",
     "jquery": "^3.6.0",
