@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 // import { Link } from "gatsby"
 import $ from "jquery"
+import { getImage } from "../lib/common"
 
 const Header = ({ siteTitle }) => {
   useEffect(() => {
@@ -96,7 +97,7 @@ const Header = ({ siteTitle }) => {
         <div className="wrapper">
           <div className="row">
             <a href="/" className="logo">
-              <img src="images/logo.svg" alt="" />
+              <img src={getImage("logo_swzen6.svg")} alt="" />
             </a>
             <a id="menu-toggle" className="menu-toggle">
               menu<span>close</span>

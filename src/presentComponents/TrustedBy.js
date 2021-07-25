@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import $ from "jquery"
+import { getImage } from "../lib/common"
 
 export default function TrustedBy({ className }) {
   useEffect(() => {
@@ -26,30 +27,6 @@ export default function TrustedBy({ className }) {
         },
       })
     }
-
-    if ($(".blog-features")) {
-      $(".blog-features .owl-carousel").owlCarousel({
-        loop: false,
-        nav: false,
-        dots: false,
-        autoplay: false,
-        responsive: {
-          0: {
-            loop: true,
-            items: 1,
-            margin: 10,
-          },
-          768: {
-            items: 2,
-            margin: 20,
-          },
-          1024: {
-            items: 3,
-            margin: 44,
-          },
-        },
-      })
-    }
   }, [])
 
   return (
@@ -59,7 +36,7 @@ export default function TrustedBy({ className }) {
           <h4 className="title">
             Trusted by store owners and agencies worldwide
           </h4>
-          <img src="images/stars.svg" alt="" />
+          <img src={getImage("stars_rr2fpq.svg")} alt="" />
           <p>
             <strong>33</strong> Total reviews <strong>4.9</strong> Average
             rating
@@ -68,7 +45,7 @@ export default function TrustedBy({ className }) {
         <div className="row-flex owl-carousel">
           <div className="item">
             <div className="image">
-              <img src="images/rating-star.svg" alt="" />
+              <img src={getImage("rating-star_dtyvuw.svg")} alt="" />
             </div>
             <div className="content">
               <p>
@@ -89,7 +66,7 @@ export default function TrustedBy({ className }) {
           </div>
           <div className="item">
             <div className="image">
-              <img src="images/rating-star.svg" alt="" />
+              <img src={getImage("rating-star_dtyvuw.svg")} alt="" />
             </div>
             <div className="content">
               <p>
@@ -110,7 +87,7 @@ export default function TrustedBy({ className }) {
           </div>
           <div className="item">
             <div className="image">
-              <img src="images/rating-star.svg" alt="" />
+              <img src={getImage("rating-star_dtyvuw.svg")} alt="" />
             </div>
             <div className="content">
               <p>
@@ -131,7 +108,7 @@ export default function TrustedBy({ className }) {
           </div>
           <div className="item">
             <div className="image">
-              <img src="images/rating-star.svg" alt="" />
+              <img src={getImage("rating-star_dtyvuw.svg")} alt="" />
             </div>
             <div className="content">
               <p>
@@ -152,7 +129,7 @@ export default function TrustedBy({ className }) {
           </div>
           <div className="item">
             <div className="image">
-              <img src="images/rating-star.svg" alt="" />
+              <img src={getImage("rating-star_dtyvuw.svg")} alt="" />
             </div>
             <div className="content">
               <p>

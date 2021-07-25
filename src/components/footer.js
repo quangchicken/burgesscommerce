@@ -1,4 +1,5 @@
 import * as React from "react"
+import { getImage } from "../lib/common"
 
 const Footer = ({ siteTitle }) => (
   <footer id="footer" className="site-footer">
@@ -30,7 +31,7 @@ const Footer = ({ siteTitle }) => (
               </li>
               <li className="tripadvisor">
                 <div className="reviews-tripadvisor">
-                  <img src="images/tripadvisor.svg" alt="" />
+                  <img src={getImage("tripadvisor_ay47ta.svg")} alt="" />
                   <p>
                     <strong>4.9</strong> Average rating, <strong>33</strong>{" "}
                     Total reviews
@@ -108,22 +109,37 @@ const Footer = ({ siteTitle }) => (
             <div className="logos">
               <ul>
                 <li>
-                  <img src="images/magento-certified-3-footer.svg" alt="" />
+                  <img
+                    src={getImage("magento-certified-3-footer_ljysr6.svg")}
+                    alt=""
+                  />
                 </li>
                 <li>
-                  <img src="images/magento-certified-2-footer.svg" alt="" />
+                  <img
+                    src={getImage("magento-certified-2-footer_g9mlfx.svg")}
+                    alt=""
+                  />
                 </li>
                 <li>
-                  <img src="images/professional-footer.svg" alt="" />
+                  <img
+                    src={getImage("professional-footer_cy68ic.svg")}
+                    alt=""
+                  />
                 </li>
                 <li>
-                  <img src="images/google-partner-footer.svg" alt="" />
+                  <img
+                    src={getImage("google-partner-footer_dwglbd.svg")}
+                    alt=""
+                  />
                 </li>
                 <li>
-                  <img src="images/google-shopping-footer.svg" alt="" />
+                  <img
+                    src={getImage("google-shopping-footer_sse7pu.svg")}
+                    alt=""
+                  />
                 </li>
                 <li>
-                  <img src="images/google-ads-footer.svg" alt="" />
+                  <img src={getImage("google-ads-footer_krfqxx.svg")} alt="" />
                 </li>
               </ul>
             </div>

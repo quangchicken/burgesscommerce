@@ -8,21 +8,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import Faq from "../presentComponents/Faq"
 import TrustedBy from "../presentComponents/TrustedBy"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
+import RecentResources from "../presentComponents/RecentResources"
+import { getImage } from "../lib/common"
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query CloudinaryImage {
-      allCloudinaryMedia {
-        edges {
-          node {
-            secure_url
-          }
-        }
-      }
-    }
-  `)
-  const clImages = data.allCloudinaryMedia.edges
-  console.log({ clImages: clImages.map(vl => vl.node) })
   return (
     <Layout>
       <Seo title="Home" />
@@ -76,18 +65,23 @@ const IndexPage = () => {
                       <picture>
                         <source
                           media="(min-width: 1024px)"
-                          srcSet="https://res.cloudinary.com/burgess-commerce/image/upload/v1627185963/assets/full-portrait.png"
+                          srcSet={getImage("full-portrait_ugepkr.png")}
                         />
-                        <source srcSet="https://res.cloudinary.com/burgess-commerce/image/upload/v1627185963/assets/full-portrait-mobile.png" />
+                        <source
+                          srcSet={getImage("full-portrait-mobile_ytsrpd.png")}
+                        />
                         <img
                           loading="lazy"
-                          src="https://res.cloudinary.com/burgess-commerce/image/upload/v1627185963/assets/full-portrait.png"
-                          alt=""
+                          src={getImage("full-portrait_ugepkr.png")}
+                          alt="full-portrait"
                         />
                       </picture>
                     </div>
                     <div className="reviews-tripadvisor">
-                      <img src="images/tripadvisor.svg" alt="" />
+                      <img
+                        src={getImage("tripadvisor_ay47ta.svg")}
+                        alt="tripadvisor"
+                      />
                       <p>
                         <strong>4.9</strong> Average rating, <strong>33</strong>{" "}
                         Total reviews
@@ -107,33 +101,41 @@ const IndexPage = () => {
                       <picture>
                         <source
                           media="(min-width: 1024px)"
-                          srcSet="images/magento.svg"
+                          srcSet={getImage("magento_hcf41g.svg")}
                         />
-                        <source srcSet="images/magento-m.svg" />
-                        <img loading="lazy" src="images/magento.svg" alt="" />
-                      </picture>
-                    </div>
-                    <div className="col-wide-4 col-small-3">
-                      <picture>
-                        <source
-                          media="(min-width: 1024px)"
-                          srcSet="images/shopify.svg"
-                        />
-                        <source srcSet="images/shopify-m.svg" />
-                        <img loading="lazy" src="images/shopify.svg" alt="" />
-                      </picture>
-                    </div>
-                    <div className="col-wide-4 col-small-3">
-                      <picture>
-                        <source
-                          media="(min-width: 1024px)"
-                          srcSet="images/bigcommerce.svg"
-                        />
-                        <source srcSet="images/bigcommerce-m.svg" />
+                        <source srcSet={getImage("magento-m_zn1jk3.svg")} />
                         <img
                           loading="lazy"
-                          src="images/bigcommerce.svg"
-                          alt=""
+                          src={getImage("magento_hcf41g.svg")}
+                          alt="magento"
+                        />
+                      </picture>
+                    </div>
+                    <div className="col-wide-4 col-small-3">
+                      <picture>
+                        <source
+                          media="(min-width: 1024px)"
+                          srcSet={getImage("shopify_nojsr5.svg")}
+                        />
+                        <source srcSet={getImage("shopify-m_eigos4.svg")} />
+                        <img
+                          loading="lazy"
+                          src={getImage("shopify_nojsr5.svg")}
+                          alt="shopify"
+                        />
+                      </picture>
+                    </div>
+                    <div className="col-wide-4 col-small-3">
+                      <picture>
+                        <source
+                          media="(min-width: 1024px)"
+                          srcSet={getImage("bigcommerce_w5xngy.svg")}
+                        />
+                        <source srcSet={getImage("bigcommerce-m_mfnkuq.svg")} />
+                        <img
+                          loading="lazy"
+                          src={getImage("bigcommerce_w5xngy.svg")}
+                          alt="bigcommerce"
                         />
                       </picture>
                     </div>
@@ -141,13 +143,13 @@ const IndexPage = () => {
                       <picture>
                         <source
                           media="(min-width: 10240px)"
-                          srcSet="images/wo-commerce.svg"
+                          srcSet={getImage("wo-commerce_n00zdx.svg")}
                         />
-                        <source srcSet="images/wo-commerce.svg" />
+                        <source srcSet={getImage("wo-commerce_n00zdx.svg")} />
                         <img
                           loading="lazy"
-                          src="images/wo-commerce.svg"
-                          alt=""
+                          src={getImage("wo-commerce_n00zdx.svg")}
+                          alt="wo-commerce"
                         />
                       </picture>
                     </div>
@@ -261,13 +263,17 @@ const IndexPage = () => {
                   <picture>
                     <source
                       media="(min-width:480px)"
-                      srcSet="images/undraw-building-website.png"
+                      srcSet={getImage("undraw-building-website_wq4bbu.png")}
                     />
-                    <source srcSet="images/undraw-building-website-mobile.png" />
+                    <source
+                      srcSet={getImage(
+                        "undraw-building-website-mobile_c7tx3s.png"
+                      )}
+                    />
                     <img
                       loading="lazy"
-                      src="images/undraw-building-website.png"
-                      alt=""
+                      src={getImage("undraw-building-website_wq4bbu.png")}
+                      alt="undraw-building-website"
                     />
                   </picture>
                 </div>
@@ -291,13 +297,15 @@ const IndexPage = () => {
                   <picture>
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/thumbnail-rowan.png"
+                      srcSet={getImage("thumbnail-rowan_wbw11h.png")}
                     />
-                    <source srcSet="images/thumbnail-rowan-mobile.png" />
+                    <source
+                      srcSet={getImage("thumbnail-rowan-mobile_xyc2ey.png")}
+                    />
                     <img
                       loading="lazy"
-                      src="images/thumbnail-rowan.png"
-                      alt=""
+                      src={getImage("thumbnail-rowan_wbw11h.png")}
+                      alt="thumbnail-rowan"
                     />
                   </picture>
                 </div>
@@ -325,22 +333,40 @@ const IndexPage = () => {
             <div className="wrapper small">
               <div className="row-flex row-flex-aligncenter">
                 <div className="col-wide-2 col-smallest-4">
-                  <img src="images/magento-certified-3.svg" alt="" />
+                  <img
+                    src={getImage("magento-certified-3_f6kvir.svg")}
+                    alt="magento-certified-3"
+                  />
                 </div>
                 <div className="col-wide-2 col-smallest-4">
-                  <img src="images/magento-certified-2.svg" alt="" />
+                  <img
+                    src={getImage("magento-certified-2_ylahlf.svg")}
+                    alt="magento-certified-2_ylahlf"
+                  />
                 </div>
                 <div className="col-wide-2 col-smallest-4">
-                  <img src="images/professional.svg" alt="" />
+                  <img
+                    src={getImage("professional_qfyl95.svg")}
+                    alt="professional"
+                  />
                 </div>
                 <div className="col-wide-2 col-smallest-4">
-                  <img src="images/google-partner.svg" alt="" />
+                  <img
+                    src={getImage("google-partner_hq4zb9.svg")}
+                    alt="google-partner"
+                  />
                 </div>
                 <div className="col-wide-2 col-smallest-4">
-                  <img src="images/google-shopping.svg" alt="" />
+                  <img
+                    src={getImage("google-shopping_niejhv.svg")}
+                    alt="google-shopping"
+                  />
                 </div>
                 <div className="col-wide-2 col-smallest-4">
-                  <img src="images/google-ads.svg" alt="" />
+                  <img
+                    src={getImage("google-ads_fyleor.svg")}
+                    alt="google-ads"
+                  />
                 </div>
               </div>
             </div>
@@ -353,12 +379,14 @@ const IndexPage = () => {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/cols2-banner-1.png"
+                        srcSet={getImage("cols2-banner-1_q41l82.png")}
                       />
-                      <source srcSet="images/cols2-banner-1-mobile.png" />
+                      <source
+                        srcSet={getImage("cols2-banner-1-mobile_zjuh2x.png")}
+                      />
                       <img
                         loading="lazy"
-                        src="images/cols2-banner-1.png"
+                        src={getImage("cols2-banner-1_q41l82.png")}
                         alt=""
                       />
                     </picture>
@@ -390,12 +418,14 @@ const IndexPage = () => {
                   <picture>
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/cols2-banner-2.png"
+                      srcSet={getImage("cols2-banner-2_fkutau.png")}
                     />
-                    <source srcSet="images/cols2-banner-2-mobile.png" />
+                    <source
+                      srcSet={getImage("cols2-banner-2-mobile_as5bxw.png")}
+                    />
                     <img
                       loading="lazy"
-                      src="images/cols2-banner-2.png"
+                      src={getImage("cols2-banner-2_fkutau.png")}
                       alt=""
                     />
                   </picture>
@@ -436,12 +466,14 @@ const IndexPage = () => {
                   <picture>
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/cols2-banner-3.png"
+                      srcSet={getImage("cols2-banner-3_kdraxz.png")}
                     />
-                    <source srcSet="images/cols2-banner-3-mobile.png" />
+                    <source
+                      srcSet={getImage("cols2-banner-3-mobile_fwpdxs.png")}
+                    />
                     <img
                       loading="lazy"
-                      src="images/cols2-banner-3.png"
+                      src={getImage("cols2-banner-3_kdraxz.png")}
                       alt=""
                     />
                   </picture>
@@ -503,13 +535,13 @@ const IndexPage = () => {
                   <picture>
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/cols2-banner-4.png"
+                      srcSet={getImage("cols2-banner-4_z4bkyu.png")}
                     />
-                    <source srcSet="images/cols2-banner-4.png" />
+                    <source srcSet={getImage("cols2-banner-4_z4bkyu.png")} />
                     <img
                       loading="lazy"
-                      src="images/cols2-banner-4.png"
-                      alt=""
+                      src={getImage("cols2-banner-4_z4bkyu.png")}
+                      alt="cols2-banner-4"
                     />
                   </picture>
                 </div>
@@ -544,13 +576,13 @@ const IndexPage = () => {
                   <picture>
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/cols2-banner-5.png"
+                      srcSet={getImage("cols2-banner-5_irzm0u.png")}
                     />
-                    <source srcSet="images/cols2-banner-5.png" />
+                    <source srcSet={getImage("cols2-banner-5_irzm0u.png")} />
                     <img
                       loading="lazy"
-                      src="images/cols2-banner-5.png"
-                      alt=""
+                      src={getImage("cols2-banner-5_irzm0u.png")}
+                      alt="cols2-banner-5"
                     />
                   </picture>
                 </div>
@@ -636,13 +668,15 @@ const IndexPage = () => {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/image-mobile.jpg"
+                        srcSet={getImage("image-mobile_zihd7n.jpg")}
                       />
-                      <source srcSet="images/image-mobile-mobile.jpg" />
+                      <source
+                        srcSet={getImage("image-mobile-mobile_goybry.jpg")}
+                      />
                       <img
                         loading="lazy"
-                        src="images/image-mobile.jpg"
-                        alt=""
+                        src={getImage("image-mobile_zihd7n.jpg")}
+                        alt="image-mobile"
                       />
                     </picture>
                   </div>
@@ -732,169 +766,22 @@ const IndexPage = () => {
                   <picture>
                     <source
                       media="(min-width: 768px)"
-                      srcSet="images/logo-partner.jpg"
+                      srcSet={getImage("logo-partner_fton5h.png")}
                     />
-                    <source srcSet="images/logo-partner-mobile.png" />
-                    <img loading="lazy" src="images/logo-partner.jpg" alt="" />
+                    <source
+                      srcSet={getImage("logo-partner-mobile_nglis0.png")}
+                    />
+                    <img
+                      loading="lazy"
+                      src={getImage("logo-partner_fton5h.png")}
+                      alt=""
+                    />
                   </picture>
                 </div>
               </div>
             </div>
           </section>
-          <section
-            className="blog-features line-bottom-left"
-            style={{ backgroundImage: "url(images/bg-banner-white.jpg)" }}
-          >
-            <div className="wrapper">
-              <div className="heading">
-                <h3 className="title text-center text-dark">
-                  Recent Resources
-                </h3>
-              </div>
-              <div className="row-flex owl-carousel">
-                <div className="col-wide-4">
-                  <div className="inner">
-                    <a href="#">
-                      <picture>
-                        <source
-                          media="(min-width: 1024px)"
-                          srcSet="images/blog-post-1.jpg"
-                        />
-                        <source srcSet="images/blog-post-1.jpg" />
-                        <img
-                          loading="lazy"
-                          src="images/blog-post-1.jpg"
-                          alt=""
-                        />
-                      </picture>
-                    </a>
-                    <div className="content">
-                      <h6 className="title">
-                        <a href="#">Quick brown fox jumps over the lazy dog.</a>
-                      </h6>
-                      <ul className="show-tags">
-                        <li>
-                          <a href="#">Magento</a>
-                        </li>
-                        <li>
-                          <a href="#">Ux</a>
-                        </li>
-                      </ul>
-                      <ul className="show-date">
-                        <li>
-                          <span className="icon">
-                            <i className="icon-calendar" />
-                          </span>
-                          13 Feb 2021
-                        </li>
-                        <li>
-                          <span className="icon">
-                            <i className="icon-time" />
-                          </span>
-                          20 minutes
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-wide-4">
-                  <div className="inner">
-                    <a href="#">
-                      <picture>
-                        <source
-                          media="(min-width: 1024px)"
-                          srcSet="images/blog-post-2.jpg"
-                        />
-                        <source srcSet="images/blog-post-2.jpg" />
-                        <img
-                          loading="lazy"
-                          src="images/blog-post-2.jpg"
-                          alt=""
-                        />
-                      </picture>
-                    </a>
-                    <div className="content">
-                      <h6 className="title">
-                        <a href="#">Quick brown fox jumps over the lazy dog.</a>
-                      </h6>
-                      <ul className="show-tags">
-                        <li>
-                          <a href="#">Magento</a>
-                        </li>
-                        <li>
-                          <a href="#">Ux</a>
-                        </li>
-                      </ul>
-                      <ul className="show-date">
-                        <li>
-                          <span className="icon">
-                            <i className="icon-calendar" />
-                          </span>
-                          13 Feb 2021
-                        </li>
-                        <li>
-                          <span className="icon">
-                            <i className="icon-time" />
-                          </span>
-                          20 minutes
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-wide-4">
-                  <div className="inner">
-                    <a href="#">
-                      <picture>
-                        <source
-                          media="(min-width: 1024px)"
-                          srcSet="images/blog-post-3.jpg"
-                        />
-                        <source srcSet="images/blog-post-3.jpg" />
-                        <img
-                          loading="lazy"
-                          src="images/blog-post-3.jpg"
-                          alt=""
-                        />
-                      </picture>
-                    </a>
-                    <div className="content">
-                      <h6 className="title">
-                        <a href="#">Quick brown fox jumps over the lazy dog.</a>
-                      </h6>
-                      <ul className="show-tags">
-                        <li>
-                          <a href="#">Magento</a>
-                        </li>
-                        <li>
-                          <a href="#">Ux</a>
-                        </li>
-                      </ul>
-                      <ul className="show-date">
-                        <li>
-                          <span className="icon">
-                            <i className="icon-calendar" />
-                          </span>
-                          13 Feb 2021
-                        </li>
-                        <li>
-                          <span className="icon">
-                            <i className="icon-time" />
-                          </span>
-                          20 minutes
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <a href="#" className="button tertiary read-more">
-                  See More Resources
-                </a>
-              </div>
-            </div>
-          </section>
+          <RecentResources />
           <Faq className="margin-top padding-bottom padding-top line-bottom-left" />
           <SubscribeEmail className="newsletter-section bg-grey" />
         </main>
