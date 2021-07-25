@@ -1,13 +1,35 @@
 import React from "react"
+import { useForm } from "react-hook-form"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { getImage } from "../lib/common"
+import { getImage, encode, REGEX_EMAIL } from "../lib/common"
 import RecentResources from "../presentComponents/RecentResources"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 import TrustedBy from "../presentComponents/TrustedBy"
 
 export default function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+  const onSubmit = data => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        ...data,
+      }),
+    })
+      .then(() =>
+        alert(
+          "Thank you for getting in touch! We appreciate you contacting us."
+        )
+      )
+      .catch(error => console.error(error))
+  }
   return (
     <Layout>
       <Seo title="Contact" />
@@ -85,7 +107,7 @@ export default function Contact() {
               </div>
               <div className="col-form">
                 <div className="form-contact">
-                  <form>
+                  <form onSubmit={handleSubmit(onSubmit)}>
                     <ul>
                       <li className="title">
                         <div className="image">
@@ -117,24 +139,31 @@ export default function Contact() {
                       <li className="input-js">
                         <label>Your email address *</label>
                         <input
-                          type="email"
-                          name="contact[email]"
-                          placeholder="Your email address *"
                           id="email"
+                          {...register("email", {
+                            required: "Email address is required",
+                            pattern: {
+                              value: REGEX_EMAIL,
+                              message: "Incorrect format email",
+                            },
+                          })}
+                          type="email"
+                          placeholder="Your email address *"
                           className="required"
-                          defaultValue=""
                           autoCorrect="off"
                           autoCapitalize="off"
                         />
+                        <small style={{ color: "#ff0000" }}>
+                          {errors.email?.message}
+                        </small>
                       </li>
                       <li className="input-js">
                         <label>Your phone number</label>
                         <input
                           type="tel"
-                          name="contact[number]"
-                          placeholder="Your phone number"
                           id="phone"
-                          defaultValue=""
+                          {...register("phone")}
+                          placeholder="Your phone number"
                           autoCorrect="off"
                           autoCapitalize="off"
                         />
@@ -143,7 +172,7 @@ export default function Contact() {
                         <label>Your name</label>
                         <input
                           type="text"
-                          name="contact[name]"
+                          {...register("username")}
                           placeholder="Your name"
                           id="name"
                           defaultValue=""
@@ -155,7 +184,7 @@ export default function Contact() {
                         <label>Your message</label>
                         <textarea
                           type="textarea"
-                          name="contact[message]"
+                          {...register("message")}
                           placeholder="Your message"
                           id="message"
                           autoCorrect="off"

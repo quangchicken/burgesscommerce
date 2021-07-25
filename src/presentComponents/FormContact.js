@@ -1,9 +1,31 @@
 import React from "react"
-import { getImage } from "../lib/common"
+import { useForm } from "react-hook-form"
+import { getImage, encode, REGEX_EMAIL } from "../lib/common"
 
 export default function FormContact({
   className = "form-contact line-bottom-left",
 }) {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+  const onSubmit = data => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        ...data,
+      }),
+    })
+      .then(() =>
+        alert(
+          "Thank you for getting in touch! We appreciate you contacting us."
+        )
+      )
+      .catch(error => console.error(error))
+  }
   return (
     <section className={className}>
       <div className="wrapper full-width">
@@ -25,7 +47,7 @@ export default function FormContact({
             </div>
           </div>
           <div className="content">
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <ul>
                 <li className="title">
                   <div className="image">
@@ -52,7 +74,13 @@ export default function FormContact({
                   <label>Your email address *</label>
                   <input
                     type="email"
-                    name="contact[email]"
+                    {...register("email", {
+                      required: "Email address is required",
+                      pattern: {
+                        value: REGEX_EMAIL,
+                        message: "Incorrect format email",
+                      },
+                    })}
                     placeholder="Your email address *"
                     id="email"
                     className="required"
@@ -60,12 +88,15 @@ export default function FormContact({
                     autoCorrect="off"
                     autoCapitalize="off"
                   />
+                  <small style={{ color: "#ff0000" }}>
+                    {errors.email?.message}
+                  </small>
                 </li>
                 <li className="input-js">
                   <label>Your phone number</label>
                   <input
                     type="tel"
-                    name="contact[number]"
+                    {...register("phone")}
                     placeholder="Your phone number"
                     id="phone"
                     defaultValue=""
@@ -77,7 +108,7 @@ export default function FormContact({
                   <label>Your name</label>
                   <input
                     type="text"
-                    name="contact[name]"
+                    {...register("username")}
                     placeholder="Your name"
                     id="name"
                     defaultValue=""
@@ -89,7 +120,7 @@ export default function FormContact({
                   <label>Your message</label>
                   <textarea
                     type="textarea"
-                    name="contact[message]"
+                    {...register("message")}
                     placeholder="Your message"
                     id="message"
                     autoCorrect="off"
