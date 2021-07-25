@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { getImage } from "../lib/common"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 import TrustedBy from "../presentComponents/TrustedBy"
 
@@ -30,7 +31,10 @@ export default function Contact() {
               </div>
               <div className="col-image text-center">
                 <div className="reviews-tripadvisor">
-                  <img src="images/tripadvisor.svg" alt />
+                  <img
+                    src={getImage("tripadvisor_ay47ta.svg")}
+                    alt="tripadvisor"
+                  />
                   <p>
                     <strong>4.9</strong> Average rating, <strong>33</strong>{" "}
                     Total reviews

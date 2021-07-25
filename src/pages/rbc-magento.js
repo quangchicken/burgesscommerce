@@ -1,18 +1,37 @@
-import React from "react"
+import React, { useEffect } from "react"
+import $ from "jquery"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { getImage } from "../lib/common"
 import Faq from "../presentComponents/Faq"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 
 export default function RbcMagento() {
+  useEffect(() => {
+    $(".text-cols .text-col .title").on("click", function (e) {
+      e.preventDefault()
+      var $el = $(this)
+      $(".text-cols .text-col .title").not($el).parent().removeClass("active")
+      $el.parent().addClass("active")
+    })
+
+    $(".cms-twocols .dropdown .title").on("click", function (e) {
+      e.preventDefault()
+      var $el = $(this)
+      $(".cms-twocols .dropdown .title").not($el).parent().removeClass("active")
+      $el.parent().addClass("active")
+    })
+  }, [])
   return (
     <Layout>
       <Seo title="Resource" />
       <main id="main" className="site-main cms-page">
         <section
           className="main-banner text-light text-left"
-          style={{ backgroundImage: "url(images/bg-banner.jpg)" }}
+          style={{
+            backgroundImage: `url(${getImage("bg-banner_jdeg7w.jpg")})`,
+          }}
         >
           <div className="wrapper">
             <div className="row row-flex">
@@ -27,7 +46,10 @@ export default function RbcMagento() {
               </div>
               <div className="col-image text-center">
                 <div className="reviews-tripadvisor">
-                  <img src="images/tripadvisor.svg" alt="" />
+                  <img
+                    src={getImage("tripadvisor_ay47ta.svg")}
+                    alt="tripadvisor"
+                  />
                   <p>
                     <strong>4.9</strong> Average rating, <strong>33</strong>{" "}
                     Total reviews
@@ -47,13 +69,15 @@ export default function RbcMagento() {
                 <picture>
                   <source
                     media="(min-width: 1024px)"
-                    srcSet="images/thumbnail-rowan-rbc.png"
+                    srcSet={getImage("thumbnail-rowan-rbc_dtk3zw.png")}
                   />
-                  <source srcSet="images/thumbnail-rowan-rbc-mobile.png" />
+                  <source
+                    srcSet={getImage("thumbnail-rowan-rbc-mobile_fgdubw.png")}
+                  />
                   <img
                     loading="lazy"
-                    src="images/thumbnail-rowan-rbc.png"
-                    alt=""
+                    src={getImage("thumbnail-rowan-rbc_dtk3zw.png")}
+                    alt="thumbnail-rowan-rb"
                   />
                 </picture>
               </div>
@@ -82,16 +106,26 @@ export default function RbcMagento() {
           <div className="wrapper">
             <div className="row-flex row-flex-aligncenter">
               <div className="item">
-                <img src="images/magento-certified-3-rbc.svg" alt="" />
+                <img
+                  src={getImage("magento-certified-3-rbc_jewkiu.svg")}
+                  alt=""
+                />
               </div>
               <div className="item">
-                <img src="images/magento-certified-2-rbc.svg" alt="" />
+                <img
+                  src={getImage("magento-certified-2-rbc_spgvzd.svg")}
+                  alt=""
+                />
               </div>
               <div className="item">
-                <img src="images/professional-rbc.svg" alt="" height={100} />
+                <img
+                  src={getImage("professional-rbc_q1oki3.svg")}
+                  alt=""
+                  height={100}
+                />
               </div>
               <div className="item hide-for-mobile">
-                <img src="images/google-partner-rbc.svg" alt="" />
+                <img src={getImage("google-partner-rbc_zy5hab.svg")} alt="" />
               </div>
             </div>
           </div>
@@ -103,13 +137,15 @@ export default function RbcMagento() {
                 <picture>
                   <source
                     media="(min-width: 1024px)"
-                    srcSet="images/magento-development.png"
+                    srcSet={getImage("magento-development_cb0gcp.png")}
                   />
-                  <source srcSet="images/magento-development-mobile.png" />
+                  <source
+                    srcSet={getImage("magento-development-mobile_ps9hof.png")}
+                  />
                   <img
                     loading="lazy"
-                    src="images/magento-development.png"
-                    alt=""
+                    src={getImage("magento-development_cb0gcp.png")}
+                    alt="magento-development"
                   />
                 </picture>
               </div>
@@ -127,13 +163,15 @@ export default function RbcMagento() {
                   <picture>
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/magento-development.png"
+                      srcSet={getImage("magento-development_cb0gcp.png")}
                     />
-                    <source srcSet="images/magento-development-mobile.png" />
+                    <source
+                      srcSet={getImage("magento-development-mobile_ps9hof.png")}
+                    />
                     <img
                       loading="lazy"
-                      src="images/magento-development.png"
-                      alt=""
+                      src={getImage("magento-development_cb0gcp.png")}
+                      alt="magento-development"
                     />
                   </picture>
                 </div>
@@ -210,13 +248,17 @@ export default function RbcMagento() {
                 <picture>
                   <source
                     media="(min-width: 1024px)"
-                    srcSet="images/magento-seo-design-and-ux.png"
+                    srcSet={getImage("magento-seo-design-and-ux_hflfdb.png")}
                   />
-                  <source srcSet="images/magento-seo-design-and-ux-mobile.png" />
+                  <source
+                    srcSet={getImage(
+                      "magento-seo-design-and-ux-mobile_qpjhj7.png"
+                    )}
+                  />
                   <img
                     loading="lazy"
-                    src="images/magento-seo-design-and-ux.png"
-                    alt=""
+                    src={getImage("magento-seo-design-and-ux_hflfdb.png")}
+                    alt="magento-seo-design-and-ux"
                   />
                 </picture>
               </div>
@@ -232,13 +274,17 @@ export default function RbcMagento() {
                   <picture>
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/magento-seo-design-and-ux.png"
+                      srcSet={getImage("magento-seo-design-and-ux_hflfdb.png")}
                     />
-                    <source srcSet="images/magento-seo-design-and-ux-mobile.png" />
+                    <source
+                      srcSet={getImage(
+                        "magento-seo-design-and-ux-mobile_qpjhj7.png"
+                      )}
+                    />
                     <img
                       loading="lazy"
-                      src="images/magento-seo-design-and-ux.png"
-                      alt=""
+                      src={getImage("magento-seo-design-and-ux_hflfdb.png")}
+                      alt="magento-seo-design-and-ux"
                     />
                   </picture>
                 </div>
@@ -332,10 +378,14 @@ export default function RbcMagento() {
                 <picture>
                   <source
                     media="(min-width: 1024px)"
-                    srcSet="images/magento-master.png"
+                    srcSet={getImage("magento-master_tvotnh.png")}
                   />
-                  <source srcSet="images/magento-master-mobile.png" />
-                  <img loading="lazy" src="images/magento-master.png" alt="" />
+                  <source srcSet={getImage("magento-master_tvotnh.png")} />
+                  <img
+                    loading="lazy"
+                    src={getImage("magento-master_tvotnh.png")}
+                    alt=""
+                  />
                 </picture>
               </div>
               <div className="col-text text-dark">
@@ -372,10 +422,16 @@ export default function RbcMagento() {
                 <picture>
                   <source
                     media="(min-width: 1024px)"
-                    srcSet="images/cols2-banner-1.png"
+                    srcSet={getImage("cols2-banner-1_q41l82.png")}
                   />
-                  <source srcSet="images/cols2-banner-1-mobile.png" />
-                  <img loading="lazy" src="images/cols2-banner-1.png" alt="" />
+                  <source
+                    srcSet={getImage("cols2-banner-1-mobile_zjuh2x.png")}
+                  />
+                  <img
+                    loading="lazy"
+                    src={getImage("cols2-banner-1_q41l82.png")}
+                    alt=""
+                  />
                 </picture>
               </div>
               <div className="col-text text-dark">
@@ -407,7 +463,9 @@ export default function RbcMagento() {
         </section>
         <section
           className="text-cols"
-          style={{ backgroundImage: "url(images/bg-banner-white.jpg)" }}
+          style={{
+            backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+          }}
         >
           <div className="wrapper">
             <div className="row">
@@ -478,10 +536,14 @@ export default function RbcMagento() {
                 <picture>
                   <source
                     media="(min-width: 960px)"
-                    srcSet="images/aidastore.jpg"
+                    srcSet={getImage("aidastore_sq2vuc.jpg")}
                   />
-                  <source srcSet="images/aidastore-mobile.jpg" />
-                  <img loading="lazy" src="images/aidastore.jpg" alt="" />
+                  <source srcSet={getImage("aidastore-mobile_m9ymlz.jpg")} />
+                  <img
+                    loading="lazy"
+                    src={getImage("aidastore_sq2vuc.jpg")}
+                    alt=""
+                  />
                 </picture>
               </div>
               <div className="caption located-image text-center">
@@ -519,10 +581,14 @@ export default function RbcMagento() {
                 <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcSet="images/logo-partner.jpg"
+                    srcSet={getImage("logo-partner_fton5h.png")}
                   />
-                  <source srcSet="images/logo-partner-mobile.png" />
-                  <img loading="lazy" src="images/logo-partner.jpg" alt="" />
+                  <source srcSet={getImage("logo-partner-mobile_nglis0.png")} />
+                  <img
+                    loading="lazy"
+                    src={getImage("logo-partner_fton5h.png")}
+                    alt="logo-partner"
+                  />
                 </picture>
               </div>
             </div>
@@ -546,10 +612,16 @@ export default function RbcMagento() {
                     <picture>
                       <source
                         media="(min-width: 768px)"
-                        srcSet="images/aida-banner.jpg"
+                        srcSet={getImage("aida-banner_dohhp9.jpg")}
                       />
-                      <source srcSet="images/aida-banner-mobile.jpg" />
-                      <img loading="lazy" src="images/aida-banner.jpg" alt="" />
+                      <source
+                        srcSet={getImage("aida-banner-mobile_vvmrjj.jpg")}
+                      />
+                      <img
+                        loading="lazy"
+                        src={getImage("aida-banner_dohhp9.jpg")}
+                        alt=""
+                      />
                     </picture>
                   </div>
                 </div>
@@ -661,12 +733,14 @@ export default function RbcMagento() {
                     <picture>
                       <source
                         media="(min-width: 768px)"
-                        srcSet="images/postmark-banner.jpg"
+                        srcSet={getImage("postmark-banner_kri7go.jpg")}
                       />
-                      <source srcSet="images/postmark-banner-mobile.jpg" />
+                      <source
+                        srcSet={getImage("postmark-banner-mobile_lyk7mi.jpg")}
+                      />
                       <img
                         loading="lazy"
-                        src="images/postmark-banner.jpg"
+                        src={getImage("postmark-banner_kri7go.jpg")}
                         alt=""
                       />
                     </picture>
@@ -720,13 +794,13 @@ export default function RbcMagento() {
                   <picture>
                     <source
                       media="(min-width: 768px)"
-                      srcSet="images/bg-banner-white.jpg"
+                      srcSet={getImage("bg-banner-white_zkei7f.jpg")}
                     />
-                    <source srcSet="images/bg-banner-white.jpg" />
+                    <source srcSet={getImage("bg-banner-white_zkei7f.jpg")} />
                     <img
                       loading="lazy"
-                      src="images/bg-banner-white.jpg"
-                      alt=""
+                      src={getImage("bg-banner-white_zkei7f.jpg")}
+                      alt="bg-banner-white"
                     />
                   </picture>
                 </div>
@@ -739,12 +813,18 @@ export default function RbcMagento() {
                         <picture>
                           <source
                             media="(min-width: 1024px)"
-                            srcSet="images/thumbnail-form-contact.png"
+                            srcSet={getImage(
+                              "thumbnail-form-contact_z8wmea.png"
+                            )}
                           />
-                          <source srcSet="images/thumbnail-form-contact-mobile.png" />
+                          <source
+                            srcSet={getImage(
+                              "thumbnail-form-contact-mobile_dk4rma.png"
+                            )}
+                          />
                           <img
                             loading="lazy"
-                            src="images/thumbnail-form-contact.png"
+                            src={getImage("thumbnail-form-contact_z8wmea.png")}
                             alt=""
                           />
                         </picture>

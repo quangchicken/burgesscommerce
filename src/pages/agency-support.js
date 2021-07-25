@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { getImage } from "../lib/common"
 import Faq from "../presentComponents/Faq"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 import TrustedBy from "../presentComponents/TrustedBy"
@@ -28,7 +29,10 @@ export default function AgencySupport() {
               </div>
               <div className="col-image text-center">
                 <div className="reviews-tripadvisor">
-                  <img src="images/tripadvisor.svg" alt />
+                  <img
+                    src={getImage("tripadvisor_ay47ta.svg")}
+                    alt="tripadvisor"
+                  />
                   <p>
                     <strong>4.9</strong> Average rating, <strong>33</strong>{" "}
                     Total reviews
@@ -623,10 +627,14 @@ export default function AgencySupport() {
                   <picture>
                     <source
                       media="(min-width: 768px)"
-                      srcSet="images/bg-banner-white.jpg"
+                      srcSet={getImage("bg-banner-white_zkei7f.jpg")}
                     />
-                    <source srcSet="images/bg-banner-white.jpg" />
-                    <img loading="lazy" src="images/bg-banner-white.jpg" alt />
+                    <source srcSet={getImage("bg-banner-white_zkei7f.jpg")} />
+                    <img
+                      loading="lazy"
+                      src={getImage("bg-banner-white_zkei7f.jpg")}
+                      alt="bg-banner-white"
+                    />
                   </picture>
                 </div>
               </div>

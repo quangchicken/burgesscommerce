@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { getImage } from "../lib/common"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 import TrustedBy from "../presentComponents/TrustedBy"
 
@@ -613,10 +614,14 @@ export default function Resource() {
                   <picture>
                     <source
                       media="(min-width: 768px)"
-                      srcSet="images/bg-banner-white.jpg"
+                      srcSet={getImage("bg-banner-white_zkei7f.jpg")}
                     />
-                    <source srcSet="images/bg-banner-white.jpg" />
-                    <img loading="lazy" src="images/bg-banner-white.jpg" alt />
+                    <source srcSet={getImage("bg-banner-white_zkei7f.jpg")} />
+                    <img
+                      loading="lazy"
+                      src={getImage("bg-banner-white_zkei7f.jpg")}
+                      alt="bg-banner-white"
+                    />
                   </picture>
                 </div>
               </div>

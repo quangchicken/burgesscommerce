@@ -289,7 +289,9 @@ const IndexPage = () => {
           <section className="hide-for-mobile line-top-right" />
           <section
             className="banner-with-text banner-thumbnail padding-top padding-bottom"
-            style={{ backgroundImage: "url(images/bg-banner-white.jpg)" }}
+            style={{
+              backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+            }}
           >
             <div className="wrapper">
               <div className="row-flex row-flex-reverse row-flex-aligncenter">
@@ -774,7 +776,7 @@ const IndexPage = () => {
                     <img
                       loading="lazy"
                       src={getImage("logo-partner_fton5h.png")}
-                      alt=""
+                      alt="logo-partner"
                     />
                   </picture>
                 </div>

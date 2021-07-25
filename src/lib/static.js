@@ -19,19 +19,19 @@ function copyToClipboard(element) {
 }
 
 $(document).ready(function () {
-  $(".text-cols .text-col .title").click(function (e) {
-    e.preventDefault()
-    var $el = $(this)
-    $(".text-cols .text-col .title").not($el).parent().removeClass("active")
-    $el.parent().addClass("active")
-  })
+  // $(".text-cols .text-col .title").click(function (e) {
+  //   e.preventDefault()
+  //   var $el = $(this)
+  //   $(".text-cols .text-col .title").not($el).parent().removeClass("active")
+  //   $el.parent().addClass("active")
+  // })
 
-  $(".cms-twocols .dropdown .title").click(function (e) {
-    e.preventDefault()
-    var $el = $(this)
-    $(".cms-twocols .dropdown .title").not($el).parent().removeClass("active")
-    $el.parent().addClass("active")
-  })
+  // $(".cms-twocols .dropdown .title").click(function (e) {
+  //   e.preventDefault()
+  //   var $el = $(this)
+  //   $(".cms-twocols .dropdown .title").not($el).parent().removeClass("active")
+  //   $el.parent().addClass("active")
+  // })
 
   $(".timeline .title").click(function (e) {
     e.preventDefault()
