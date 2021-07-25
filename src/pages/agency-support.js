@@ -9,6 +9,7 @@ import RecentResources from "../presentComponents/RecentResources"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 import TrustedBy from "../presentComponents/TrustedBy"
 import FormContact from "../presentComponents/FormContact"
+import { Mailchimp } from "../presentComponents/Newsletter"
 
 export default function AgencySupport() {
   useEffect(() => {
@@ -280,28 +281,7 @@ export default function AgencySupport() {
               <div className="col-wide-12">
                 <h4 className="title">Impressed? Get in touch</h4>
                 <div className="newsletter-form">
-                  <form className="">
-                    <div className="actions">
-                      <input
-                        type="email"
-                        name="contact[email]"
-                        placeholder="Your email address"
-                        id="newsletter-email"
-                        className="required"
-                        defaultValue=""
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                      <button type="submit" name="commit" className="button">
-                        Subscribe
-                      </button>
-                    </div>
-                    <span className="hide">Email address is required</span>
-                    <p className="text-light">
-                      <span className="hide">Thank you! </span>I’ll give you a
-                      call or email reply shortly to discuss your project
-                    </p>
-                  </form>
+                  <Mailchimp placeholder="Your email address" showText />
                 </div>
               </div>
             </div>

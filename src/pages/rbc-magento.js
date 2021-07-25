@@ -7,6 +7,7 @@ import { getImage } from "../lib/common"
 import Faq from "../presentComponents/Faq"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 import FormContact from "../presentComponents/FormContact"
+import { Mailchimp } from "../presentComponents/Newsletter"
 
 export default function RbcMagento() {
   useEffect(() => {
@@ -345,28 +346,7 @@ export default function RbcMagento() {
               <div className="col-wide-12">
                 <h4 className="title">Impressed? Get in touch</h4>
                 <div className="newsletter-form">
-                  <form className="">
-                    <div className="actions">
-                      <input
-                        type="email"
-                        name="contact[email]"
-                        placeholder="Your email address"
-                        id="newsletter-email"
-                        className="required"
-                        defaultValue=""
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                      <button type="submit" name="commit" className="button">
-                        Subscribe
-                      </button>
-                    </div>
-                    <span className="hide">Email address is required</span>
-                    <p className="text-light">
-                      <span>Thank you! </span>I’ll give you a call or email
-                      reply shortly to discuss your project
-                    </p>
-                  </form>
+                  <Mailchimp showThanks placeholder="Your email address" />
                 </div>
               </div>
             </div>
@@ -758,28 +738,7 @@ export default function RbcMagento() {
               <div className="col-wide-6">
                 <h4 className="title">Sound good? Get in touch</h4>
                 <div className="newsletter-form">
-                  <form className="">
-                    <div className="actions">
-                      <input
-                        type="email"
-                        name="contact[email]"
-                        placeholder="Your email address"
-                        id="newsletter-email"
-                        className="required"
-                        defaultValue=""
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                      <button type="submit" name="commit" className="button">
-                        Subscribe
-                      </button>
-                    </div>
-                    <span className="hide">Email address is required</span>
-                    <p className="text-light">
-                      <span>Thank you! </span>I’ll give you a call or email
-                      reply shortly to discuss your project
-                    </p>
-                  </form>
+                  <Mailchimp showThanks placeholder="Your email address" />
                 </div>
               </div>
             </div>

@@ -4,12 +4,12 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import { useStaticQuery, graphql } from "gatsby"
 import Faq from "../presentComponents/Faq"
 import TrustedBy from "../presentComponents/TrustedBy"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 import RecentResources from "../presentComponents/RecentResources"
 import { getImage } from "../lib/common"
+import { Mailchimp } from "../presentComponents/Newsletter"
 
 const IndexPage = () => {
   return (
@@ -28,35 +28,7 @@ const IndexPage = () => {
                         <span>affordable</span>, more <span>personal</span>
                       </h3>
                       <div className="newsletter-form">
-                        <form className="">
-                          <div className="actions">
-                            <input
-                              type="email"
-                              name="contact[email]"
-                              placeholder="Phone or email address"
-                              id="newsletter-email"
-                              className="required"
-                              defaultValue=""
-                              autoCorrect="off"
-                              autoCapitalize="off"
-                            />
-                            <button
-                              type="submit"
-                              name="commit"
-                              className="button"
-                            >
-                              Subscribe
-                            </button>
-                          </div>
-                          <span className="hide">
-                            Email address is required
-                          </span>
-                          <p className="text-light">
-                            <span className="hide">Thank you! </span>I’ll give
-                            you a call or email reply shortly to discuss your
-                            project
-                          </p>
-                        </form>
+                        <Mailchimp showText label="Subscribe" />
                       </div>
                     </div>
                   </div>
@@ -627,32 +599,12 @@ const IndexPage = () => {
                 </div>
                 <div className="col-wide-6 text-center">
                   <div className="newsletter-form">
-                    <form className="">
-                      <div className="actions">
-                        <input
-                          type="email"
-                          name="contact[email]"
-                          placeholder="Your email address"
-                          id="newsletter-email"
-                          className="required"
-                          defaultValue=""
-                          autoCorrect="off"
-                          autoCapitalize="off"
-                        />
-                        <button
-                          type="submit"
-                          name="commit"
-                          className="button secondary"
-                        >
-                          Subscribe
-                        </button>
-                      </div>
-                      <span className="hide">Email address is required</span>
-                      <p className="text-dark">
-                        <span className="hide">Thank you! </span>I’ll give you a
-                        call or email reply shortly to discuss your project
-                      </p>
-                    </form>
+                    <Mailchimp
+                      showText
+                      textType="dark"
+                      placeholder="Your email address"
+                      btnClass="secondary"
+                    />
                   </div>
                 </div>
               </div>
@@ -720,28 +672,7 @@ const IndexPage = () => {
                 <div className="col-wide-6">
                   <h4 className="title">Impressed? Get in touch</h4>
                   <div className="newsletter-form">
-                    <form className="">
-                      <div className="actions">
-                        <input
-                          type="email"
-                          name="contact[email]"
-                          placeholder="Your email address"
-                          id="newsletter-email"
-                          className="required"
-                          defaultValue=""
-                          autoCorrect="off"
-                          autoCapitalize="off"
-                        />
-                        <button type="submit" name="commit" className="button">
-                          Subscribe
-                        </button>
-                      </div>
-                      <span className="hide">Email address is required</span>
-                      <p className="text-light">
-                        <span className="hide">Thank you! </span>I’ll give you a
-                        call or email reply shortly to discuss your project
-                      </p>
-                    </form>
+                    <Mailchimp showText placeholder="Your email address" />
                   </div>
                 </div>
                 <div className="col-wide-6"></div>
