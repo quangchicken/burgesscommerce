@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { getImage } from "../lib/common"
+import FormContact from "../presentComponents/FormContact"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 import TrustedBy from "../presentComponents/TrustedBy"
 
@@ -26,12 +27,14 @@ export default function Resource() {
                       <picture>
                         <source
                           media="(min-width: 1024px)"
-                          srcSet="images/thumbnail-blogs.png"
+                          srcSet={getImage("thumbnail-blogs_wp0mln.png")}
                         />
-                        <source srcSet="images/thumbnail-blogs-mobile.png" />
+                        <source
+                          srcSet={getImage("thumbnail-blogs-mobile.png")}
+                        />
                         <img
                           loading="lazy"
-                          src="images/thumbnail-blogs.png"
+                          src={getImage("thumbnail-blogs_wp0mln.png")}
                           alt
                         />
                       </picture>
@@ -77,10 +80,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-1.jpg"
+                        srcSet={getImage("blog-post-1_vtefug.jpg")}
                       />
-                      <source srcSet="images/blog-post-1.jpg" />
-                      <img loading="lazy" src="images/blog-post-1.jpg" alt />
+                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-1_vtefug.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -118,10 +125,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-2.jpg"
+                        srcSet={getImage("blog-post-2_k0svpt.jpg")}
                       />
-                      <source srcSet="images/blog-post-2.jpg" />
-                      <img loading="lazy" src="images/blog-post-2.jpg" alt />
+                      <source srcSet={getImage("blog-post-2_k0svpt.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-2_k0svpt.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -159,10 +170,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-3.jpg"
+                        srcSet={getImage("blog-post-1_vtefug.jpg")}
                       />
-                      <source srcSet="images/blog-post-3.jpg" />
-                      <img loading="lazy" src="images/blog-post-3.jpg" alt />
+                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-1_vtefug.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -200,10 +215,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-1.jpg"
+                        srcSet={getImage("blog-post-1_vtefug.jpg")}
                       />
-                      <source srcSet="images/blog-post-1.jpg" />
-                      <img loading="lazy" src="images/blog-post-1.jpg" alt />
+                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-1_vtefug.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -241,10 +260,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-2.jpg"
+                        srcSet={getImage("blog-post-2_k0svpt.jpg")}
                       />
-                      <source srcSet="images/blog-post-2.jpg" />
-                      <img loading="lazy" src="images/blog-post-2.jpg" alt />
+                      <source srcSet={getImage("blog-post-2_k0svpt.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-2_k0svpt.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -282,10 +305,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-3.jpg"
+                        srcSet={getImage("blog-post-1_vtefug.jpg")}
                       />
-                      <source srcSet="images/blog-post-3.jpg" />
-                      <img loading="lazy" src="images/blog-post-3.jpg" alt />
+                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-1_vtefug.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -323,10 +350,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-1.jpg"
+                        srcSet={getImage("blog-post-1_vtefug.jpg")}
                       />
-                      <source srcSet="images/blog-post-1.jpg" />
-                      <img loading="lazy" src="images/blog-post-1.jpg" alt />
+                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-1_vtefug.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -364,10 +395,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-2.jpg"
+                        srcSet={getImage("blog-post-2_k0svpt.jpg")}
                       />
-                      <source srcSet="images/blog-post-2.jpg" />
-                      <img loading="lazy" src="images/blog-post-2.jpg" alt />
+                      <source srcSet={getImage("blog-post-2_k0svpt.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-2_k0svpt.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -405,10 +440,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-3.jpg"
+                        srcSet={getImage("blog-post-1_vtefug.jpg")}
                       />
-                      <source srcSet="images/blog-post-3.jpg" />
-                      <img loading="lazy" src="images/blog-post-3.jpg" alt />
+                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-1_vtefug.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -446,10 +485,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-1.jpg"
+                        srcSet={getImage("blog-post-1_vtefug.jpg")}
                       />
-                      <source srcSet="images/blog-post-1.jpg" />
-                      <img loading="lazy" src="images/blog-post-1.jpg" alt />
+                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-1_vtefug.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -487,10 +530,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-2.jpg"
+                        srcSet={getImage("blog-post-2_k0svpt.jpg")}
                       />
-                      <source srcSet="images/blog-post-2.jpg" />
-                      <img loading="lazy" src="images/blog-post-2.jpg" alt />
+                      <source srcSet={getImage("blog-post-2_k0svpt.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-2_k0svpt.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -528,10 +575,14 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet="images/blog-post-3.jpg"
+                        srcSet={getImage("blog-post-1_vtefug.jpg")}
                       />
-                      <source srcSet="images/blog-post-3.jpg" />
-                      <img loading="lazy" src="images/blog-post-3.jpg" alt />
+                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-1_vtefug.jpg")}
+                        alt="blog"
+                      />
                     </picture>
                   </a>
                   <div className="content">
@@ -607,117 +658,7 @@ export default function Resource() {
         </section>
 
         <TrustedBy className="testimonials-carousel bg-blue text-center text-light padding-top padding-bottom" />
-
-        <section className="form-contact line-bottom-left">
-          <div className="wrapper full-width">
-            <div className="row">
-              <div className="col-image">
-                <div className="image">
-                  <picture>
-                    <source
-                      media="(min-width: 768px)"
-                      srcSet={getImage("bg-banner-white_zkei7f.jpg")}
-                    />
-                    <source srcSet={getImage("bg-banner-white_zkei7f.jpg")} />
-                    <img
-                      loading="lazy"
-                      src={getImage("bg-banner-white_zkei7f.jpg")}
-                      alt="bg-banner-white"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div className="content">
-                <form>
-                  <ul>
-                    <li className="title">
-                      <div className="image">
-                        <picture>
-                          <source
-                            media="(min-width: 1024px)"
-                            srcSet={getImage(
-                              "thumbnail-form-contact_z8wmea.png"
-                            )}
-                          />
-                          <source
-                            srcSet={getImage(
-                              "thumbnail-form-contact-mobile_dk4rma.png"
-                            )}
-                          />
-                          <img
-                            loading="lazy"
-                            src={getImage("thumbnail-form-contact_z8wmea.png")}
-                            alt=""
-                          />
-                        </picture>
-                      </div>
-                      <h2>Let’s talk about how I can help you</h2>
-                    </li>
-                    <li className="input-js">
-                      <label>Your email address *</label>
-                      <input
-                        type="email"
-                        name="contact[email]"
-                        placeholder="Your email address *"
-                        id="email"
-                        className="required"
-                        defaultValue
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                    </li>
-                    <li className="input-js">
-                      <label>Your phone number</label>
-                      <input
-                        type="tel"
-                        name="contact[number]"
-                        placeholder="Your phone number"
-                        id="phone"
-                        defaultValue
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                    </li>
-                    <li className="input-js">
-                      <label>Your name</label>
-                      <input
-                        type="text"
-                        name="contact[name]"
-                        placeholder="Your name"
-                        id="name"
-                        defaultValue
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                    </li>
-                    <li className="input-js">
-                      <label>Your message</label>
-                      <textarea
-                        type="textarea"
-                        name="contact[message]"
-                        placeholder="Your message"
-                        id="message"
-                        value
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                        defaultValue={""}
-                      />
-                    </li>
-                    <li className>
-                      <button
-                        type="submit"
-                        name="commit"
-                        className="button secondary"
-                      >
-                        Let’s Talk
-                      </button>
-                    </li>
-                  </ul>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FormContact />
         <SubscribeEmail className="newsletter-section bg-grey" />
       </main>
     </Layout>

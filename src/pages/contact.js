@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { getImage } from "../lib/common"
+import RecentResources from "../presentComponents/RecentResources"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 import TrustedBy from "../presentComponents/TrustedBy"
 
@@ -14,7 +15,7 @@ export default function Contact() {
         <section
           className="main-banner text-light text-left"
           style={{
-            backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+            backgroundImage: `url(${getImage("bg-banner_jdeg7w.jpg")})`,
           }}
         >
           <div className="wrapper">
@@ -91,13 +92,21 @@ export default function Contact() {
                           <picture>
                             <source
                               media="(min-width: 768px)"
-                              srcSet="images/thumbnail-contact-section.png"
+                              srcSet={getImage(
+                                "thumbnail-contact-section_c0hvqs.png"
+                              )}
                             />
-                            <source srcSet="images/thumbnail-contact-section-mobile.png" />
+                            <source
+                              srcSet={getImage(
+                                "thumbnail-contact-section-mobile_fhr9zs.png"
+                              )}
+                            />
                             <img
                               loading="lazy"
-                              src="images/thumbnail-contact-section.png"
-                              alt
+                              src={getImage(
+                                "thumbnail-contact-section_c0hvqs.png"
+                              )}
+                              alt="thumbnail"
                             />
                           </picture>
                         </div>
@@ -113,7 +122,7 @@ export default function Contact() {
                           placeholder="Your email address *"
                           id="email"
                           className="required"
-                          defaultValue
+                          defaultValue=""
                           autoCorrect="off"
                           autoCapitalize="off"
                         />
@@ -125,7 +134,7 @@ export default function Contact() {
                           name="contact[number]"
                           placeholder="Your phone number"
                           id="phone"
-                          defaultValue
+                          defaultValue=""
                           autoCorrect="off"
                           autoCapitalize="off"
                         />
@@ -137,7 +146,7 @@ export default function Contact() {
                           name="contact[name]"
                           placeholder="Your name"
                           id="name"
-                          defaultValue
+                          defaultValue=""
                           autoCorrect="off"
                           autoCapitalize="off"
                         />
@@ -149,13 +158,12 @@ export default function Contact() {
                           name="contact[message]"
                           placeholder="Your message"
                           id="message"
-                          value
                           autoCorrect="off"
                           autoCapitalize="off"
-                          defaultValue={""}
+                          defaultValue=""
                         />
                       </li>
-                      <li className>
+                      <li className="">
                         <button
                           type="submit"
                           name="commit"
@@ -187,143 +195,7 @@ export default function Contact() {
         </section>
         <TrustedBy className="testimonials-carousel bg-blue text-center text-light padding-top padding-bottom" />
         <section className="line-bottom-right" />
-        <section className="blog-features line-bottom-left">
-          <div className="wrapper">
-            <div className="heading">
-              <h3 className="title text-center text-dark">Recent Resources</h3>
-            </div>
-            <div className="row-flex owl-carousel">
-              <div className="col-wide-4">
-                <div className="inner">
-                  <a href="#">
-                    <picture>
-                      <source
-                        media="(min-width: 1024px)"
-                        srcSet="images/blog-post-1.jpg"
-                      />
-                      <source srcSet="images/blog-post-1.jpg" />
-                      <img loading="lazy" src="images/blog-post-1.jpg" alt />
-                    </picture>
-                  </a>
-                  <div className="content">
-                    <h6 className="title">
-                      <a href="#">Quick brown fox jumps over the lazy dog.</a>
-                    </h6>
-                    <ul className="show-tags">
-                      <li>
-                        <a href="#">Magento</a>
-                      </li>
-                      <li>
-                        <a href="#">Ux</a>
-                      </li>
-                    </ul>
-                    <ul className="show-date">
-                      <li>
-                        <span className="icon">
-                          <i className="icon-calendar" />
-                        </span>
-                        13 Feb 2021
-                      </li>
-                      <li>
-                        <span className="icon">
-                          <i className="icon-time" />
-                        </span>
-                        20 minutes
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-wide-4">
-                <div className="inner">
-                  <a href="#">
-                    <picture>
-                      <source
-                        media="(min-width: 1024px)"
-                        srcSet="images/blog-post-2.jpg"
-                      />
-                      <source srcSet="images/blog-post-2.jpg" />
-                      <img loading="lazy" src="images/blog-post-2.jpg" alt />
-                    </picture>
-                  </a>
-                  <div className="content">
-                    <h6 className="title">
-                      <a href="#">Quick brown fox jumps over the lazy dog.</a>
-                    </h6>
-                    <ul className="show-tags">
-                      <li>
-                        <a href="#">Magento</a>
-                      </li>
-                      <li>
-                        <a href="#">Ux</a>
-                      </li>
-                    </ul>
-                    <ul className="show-date">
-                      <li>
-                        <span className="icon">
-                          <i className="icon-calendar" />
-                        </span>
-                        13 Feb 2021
-                      </li>
-                      <li>
-                        <span className="icon">
-                          <i className="icon-time" />
-                        </span>
-                        20 minutes
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-wide-4">
-                <div className="inner">
-                  <a href="#">
-                    <picture>
-                      <source
-                        media="(min-width: 1024px)"
-                        srcSet="images/blog-post-3.jpg"
-                      />
-                      <source srcSet="images/blog-post-3.jpg" />
-                      <img loading="lazy" src="images/blog-post-3.jpg" alt />
-                    </picture>
-                  </a>
-                  <div className="content">
-                    <h6 className="title">
-                      <a href="#">Quick brown fox jumps over the lazy dog.</a>
-                    </h6>
-                    <ul className="show-tags">
-                      <li>
-                        <a href="#">Magento</a>
-                      </li>
-                      <li>
-                        <a href="#">Ux</a>
-                      </li>
-                    </ul>
-                    <ul className="show-date">
-                      <li>
-                        <span className="icon">
-                          <i className="icon-calendar" />
-                        </span>
-                        13 Feb 2021
-                      </li>
-                      <li>
-                        <span className="icon">
-                          <i className="icon-time" />
-                        </span>
-                        20 minutes
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <a href="#" className="button tertiary read-more">
-                See More Resources
-              </a>
-            </div>
-          </div>
-        </section>
+        <RecentResources className="blog-features line-bottom-left" />
         <SubscribeEmail className="newsletter-section bg-grey" />
       </main>
     </Layout>

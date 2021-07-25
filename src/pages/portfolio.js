@@ -3,6 +3,7 @@ import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { getImage } from "../lib/common"
+import FormContact from "../presentComponents/FormContact"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
 
 export default function Portfolio() {
@@ -13,7 +14,7 @@ export default function Portfolio() {
         <section
           className="main-banner text-light text-left"
           style={{
-            backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+            backgroundImage: `url(${getImage("bg-banner_jdeg7w.jpg")})`,
           }}
         >
           <div className="wrapper">
@@ -44,7 +45,7 @@ export default function Portfolio() {
           <div className="hero-profile">
             <img
               alt="Rowan Burgess Ecommerce Expert"
-              src="images/thumbnail-portofilio.png"
+              src={getImage("thumbnail-portofilio_i8mjxl.png")}
             />
           </div>
         </section>
@@ -59,25 +60,33 @@ export default function Portfolio() {
                   <picture className="first">
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/banner-aida-portofilio.jpg"
+                      srcSet={getImage("banner-aida-portofilio_dosqpu.png")}
                     />
-                    <source srcSet="images/banner-aida-portofilio.jpg" />
+                    <source
+                      srcSet={getImage("banner-aida-portofilio_dosqpu.png")}
+                    />
                     <img
                       loading="lazy"
-                      src="images/banner-aida-portofilio.jpg"
-                      alt
+                      src={getImage("banner-aida-portofilio_dosqpu.png")}
+                      alt="banner"
                     />
                   </picture>
                   <picture className="second">
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/banner-mobile-aida-portofilio.png"
+                      srcSet={getImage(
+                        "banner-mobile-aida-portofilio_iff0gy.png"
+                      )}
                     />
-                    <source srcSet="images/banner-mobile-aida-portofilio.png" />
+                    <source
+                      srcSet={getImage(
+                        "banner-mobile-aida-portofilio_iff0gy.png"
+                      )}
+                    />
                     <img
                       loading="lazy"
-                      src="images/banner-mobile-aida-portofilio.png"
-                      alt
+                      src={getImage("banner-mobile-aida-portofilio_iff0gy.png")}
+                      alt="banner"
                     />
                   </picture>
                 </div>
@@ -91,13 +100,15 @@ export default function Portfolio() {
                       <picture>
                         <source
                           media="(min-width: 1024px)"
-                          srcSet="images/shopify-portofilio.svg"
+                          srcSet={getImage("shopify-portofilio_qlocsf.svg")}
                         />
-                        <source srcSet="images/shopify-portofilio.svg" />
+                        <source
+                          srcSet={getImage("shopify-portofilio_qlocsf.svg")}
+                        />
                         <img
                           loading="lazy"
-                          src="images/shopify-portofilio.svg"
-                          alt
+                          src={getImage("shopify-portofilio_qlocsf.svg")}
+                          alt="banner"
                         />
                       </picture>
                     </div>
@@ -122,25 +133,39 @@ export default function Portfolio() {
                   <picture className="first">
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/banner-drumcenter-portofilio.jpg"
+                      srcSet={getImage(
+                        "banner-drumcenter-portofilio_f9y0c0.jpg"
+                      )}
                     />
-                    <source srcSet="images/banner-drumcenter-portofilio.jpg" />
+                    <source
+                      srcSet={getImage(
+                        "banner-drumcenter-portofilio_f9y0c0.jpg"
+                      )}
+                    />
                     <img
                       loading="lazy"
-                      src="images/banner-drumcenter-portofilio.jpg"
-                      alt
+                      src={getImage("banner-drumcenter-portofilio_f9y0c0.jpg")}
+                      alt="banner"
                     />
                   </picture>
                   <picture className="second border-none">
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/banner-mobile-drumcenter-portofilio.png"
+                      srcSet={getImage(
+                        "banner-mobile-drumcenter-portofilio_wwfxds.png"
+                      )}
                     />
-                    <source srcSet="images/banner-mobile-drumcenter-portofilio.png" />
+                    <source
+                      srcSet={getImage(
+                        "banner-mobile-drumcenter-portofilio_wwfxds.png"
+                      )}
+                    />
                     <img
                       loading="lazy"
-                      src="images/banner-mobile-drumcenter-portofilio.png"
-                      alt
+                      src={getImage(
+                        "banner-mobile-drumcenter-portofilio_wwfxds.png"
+                      )}
+                      alt="banner"
                     />
                   </picture>
                 </div>
@@ -154,13 +179,15 @@ export default function Portfolio() {
                       <picture>
                         <source
                           media="(min-width: 1024px)"
-                          srcSet="images/magento-portofilio.svg"
+                          srcSet={getImage("magento-portofilio_kyoirz.svg")}
                         />
-                        <source srcSet="images/magento-portofilio.svg" />
+                        <source
+                          srcSet={getImage("magento-portofilio_kyoirz.svg")}
+                        />
                         <img
                           loading="lazy"
-                          src="images/magento-portofilio.svg"
-                          alt
+                          src={getImage("magento-portofilio_kyoirz.svg")}
+                          alt="banner"
                         />
                       </picture>
                     </div>
@@ -185,25 +212,41 @@ export default function Portfolio() {
                   <picture className="first">
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/banner-fishingtackle-portofilio.jpg"
+                      srcSet={getImage(
+                        "banner-fishingtackle-portofilio_j8eloi.jpg"
+                      )}
                     />
-                    <source srcSet="images/banner-fishingtackle-portofilio.jpg" />
+                    <source
+                      srcSet={getImage(
+                        "banner-fishingtackle-portofilio_j8eloi.jpg"
+                      )}
+                    />
                     <img
                       loading="lazy"
-                      src="images/banner-fishingtackle-portofilio.jpg"
-                      alt
+                      src={getImage(
+                        "banner-fishingtackle-portofilio_j8eloi.jpg"
+                      )}
+                      alt="banner"
                     />
                   </picture>
                   <picture className="second">
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/banner-mobile-fishingtackle-portofilio.png"
+                      srcSet={getImage(
+                        "banner-mobile-fishingtackle-portofilio_zcifar.png"
+                      )}
                     />
-                    <source srcSet="images/banner-mobile-fishingtackle-portofilio.png" />
+                    <source
+                      srcSet={getImage(
+                        "banner-mobile-fishingtackle-portofilio_zcifar.png"
+                      )}
+                    />
                     <img
                       loading="lazy"
-                      src="images/banner-mobile-fishingtackle-portofilio.png"
-                      alt
+                      src={getImage(
+                        "banner-mobile-fishingtackle-portofilio_zcifar.png"
+                      )}
+                      alt="banner"
                     />
                   </picture>
                 </div>
@@ -217,13 +260,15 @@ export default function Portfolio() {
                       <picture>
                         <source
                           media="(min-width: 1024px)"
-                          srcSet="images/magento-portofilio.svg"
+                          srcSet={getImage("magento-portofilio_kyoirz.svg")}
                         />
-                        <source srcSet="images/magento-portofilio.svg" />
+                        <source
+                          srcSet={getImage("magento-portofilio_kyoirz.svg")}
+                        />
                         <img
                           loading="lazy"
-                          src="images/magento-portofilio.svg"
-                          alt
+                          src={getImage("magento-portofilio_kyoirz.svg")}
+                          alt="banner"
                         />
                       </picture>
                     </div>
@@ -248,25 +293,35 @@ export default function Portfolio() {
                   <picture className="first">
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/banner-postmark-portofilio.jpg"
+                      srcSet={getImage("banner-postmark-portofilio_qexaun.jpg")}
                     />
-                    <source srcSet="images/banner-postmark-portofilio.jpg" />
+                    <source
+                      srcSet={getImage("banner-postmark-portofilio_qexaun.jpg")}
+                    />
                     <img
                       loading="lazy"
-                      src="images/banner-postmark-portofilio.jpg"
-                      alt
+                      src={getImage("banner-postmark-portofilio_qexaun.jpg")}
+                      alt="banner"
                     />
                   </picture>
                   <picture className="second">
                     <source
                       media="(min-width: 1024px)"
-                      srcSet="images/banner-mobile-postmark-portofilio.png"
+                      srcSet={getImage(
+                        "banner-mobile-postmark-portofilio_hok99x.png"
+                      )}
                     />
-                    <source srcSet="images/banner-mobile-postmark-portofilio.png" />
+                    <source
+                      srcSet={getImage(
+                        "banner-mobile-postmark-portofilio_hok99x.png"
+                      )}
+                    />
                     <img
                       loading="lazy"
-                      src="images/banner-mobile-postmark-portofilio.png"
-                      alt
+                      src={getImage(
+                        "banner-mobile-postmark-portofilio_hok99x.png"
+                      )}
+                      alt="banner"
                     />
                   </picture>
                 </div>
@@ -280,13 +335,15 @@ export default function Portfolio() {
                       <picture>
                         <source
                           media="(min-width: 1024px)"
-                          srcSet="images/magento-portofilio.svg"
+                          srcSet={getImage("magento-portofilio_kyoirz.svg")}
                         />
-                        <source srcSet="images/magento-portofilio.svg" />
+                        <source
+                          srcSet={getImage("magento-portofilio_kyoirz.svg")}
+                        />
                         <img
                           loading="lazy"
-                          src="images/magento-portofilio.svg"
-                          alt
+                          src={getImage("magento-portofilio_kyoirz.svg")}
+                          alt="banner"
                         />
                       </picture>
                     </div>
@@ -300,116 +357,7 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-        <section className="form-contact line-bottom-left margin-top">
-          <div className="wrapper full-width">
-            <div className="row">
-              <div className="col-image">
-                <div className="image">
-                  <picture>
-                    <source
-                      media="(min-width: 768px)"
-                      srcSet={getImage("bg-banner-white_zkei7f.jpg")}
-                    />
-                    <source srcSet={getImage("bg-banner-white_zkei7f.jpg")} />
-                    <img
-                      loading="lazy"
-                      src={getImage("bg-banner-white_zkei7f.jpg")}
-                      alt="bg-banner-white"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div className="content">
-                <form>
-                  <ul>
-                    <li className="title">
-                      <div className="image bg-blue">
-                        <picture>
-                          <source
-                            media="(min-width: 1024px)"
-                            srcSet={getImage(
-                              "thumbnail-form-contact_z8wmea.png"
-                            )}
-                          />
-                          <source
-                            srcSet={getImage(
-                              "thumbnail-form-contact-mobile_dk4rma.png"
-                            )}
-                          />
-                          <img
-                            loading="lazy"
-                            src={getImage("thumbnail-form-contact_z8wmea.png")}
-                            alt=""
-                          />
-                        </picture>
-                      </div>
-                      <h2>Let’s talk about how I can help you</h2>
-                    </li>
-                    <li className="input-js">
-                      <label>Your email address *</label>
-                      <input
-                        type="email"
-                        name="contact[email]"
-                        placeholder="Your email address *"
-                        id="email"
-                        className="required"
-                        defaultValue
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                    </li>
-                    <li className="input-js">
-                      <label>Your phone number</label>
-                      <input
-                        type="tel"
-                        name="contact[number]"
-                        placeholder="Your phone number"
-                        id="phone"
-                        defaultValue
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                    </li>
-                    <li className="input-js">
-                      <label>Your name</label>
-                      <input
-                        type="text"
-                        name="contact[name]"
-                        placeholder="Your name"
-                        id="name"
-                        defaultValue
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                      />
-                    </li>
-                    <li className="input-js">
-                      <label>Your message</label>
-                      <textarea
-                        type="textarea"
-                        name="contact[message]"
-                        placeholder="Your message"
-                        id="message"
-                        value
-                        autoCorrect="off"
-                        autoCapitalize="off"
-                        defaultValue={""}
-                      />
-                    </li>
-                    <li className>
-                      <button
-                        type="submit"
-                        name="commit"
-                        className="button secondary"
-                      >
-                        Let’s Talk
-                      </button>
-                    </li>
-                  </ul>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FormContact className="form-contact line-bottom-left margin-top" />
         <SubscribeEmail className="newsletter-section bg-grey" />
       </main>
     </Layout>
