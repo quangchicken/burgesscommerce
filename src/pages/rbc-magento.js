@@ -542,7 +542,7 @@ export default function RbcMagento() {
                   <img
                     loading="lazy"
                     src={getImage("aidastore_sq2vuc.jpg")}
-                    alt=""
+                    alt="aidastore_sq2vuc"
                   />
                 </picture>
               </div>

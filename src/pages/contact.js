@@ -13,7 +13,9 @@ export default function Contact() {
       <main id="main" className="site-main cms-page contact">
         <section
           className="main-banner text-light text-left"
-          style={{ backgroundImage: "url(images/bg-banner.jpg)" }}
+          style={{
+            backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+          }}
         >
           <div className="wrapper">
             <div className="row row-flex">

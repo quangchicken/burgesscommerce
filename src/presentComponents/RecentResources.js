@@ -2,7 +2,10 @@ import React, { useEffect } from "react"
 import $ from "jquery"
 import { getImage } from "../lib/common"
 
-export default function RecentResources() {
+export default function RecentResources({
+  mainTitle = "Recent Resources",
+  className = "blog-features line-bottom-left",
+}) {
   useEffect(() => {
     if ($(".blog-features")) {
       $(".blog-features .owl-carousel").owlCarousel({
@@ -30,14 +33,14 @@ export default function RecentResources() {
   }, [])
   return (
     <section
-      className="blog-features line-bottom-left"
+      className={className}
       style={{
         backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
       }}
     >
       <div className="wrapper">
         <div className="heading">
-          <h3 className="title text-center text-dark">Recent Resources</h3>
+          <h3 className="title text-center text-dark">{mainTitle}</h3>
         </div>
         <div className="row-flex owl-carousel">
           <div className="col-wide-4">

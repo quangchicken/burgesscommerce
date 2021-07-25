@@ -12,7 +12,9 @@ export default function Portfolio() {
       <main id="main" className="site-main cms-page">
         <section
           className="main-banner text-light text-left"
-          style={{ backgroundImage: "url(images/bg-banner.jpg)" }}
+          style={{
+            backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+          }}
         >
           <div className="wrapper">
             <div className="row row-flex">
@@ -325,13 +327,19 @@ export default function Portfolio() {
                         <picture>
                           <source
                             media="(min-width: 1024px)"
-                            srcSet="images/thumbnail-form-contact.png"
+                            srcSet={getImage(
+                              "thumbnail-form-contact_z8wmea.png"
+                            )}
                           />
-                          <source srcSet="images/thumbnail-form-contact-mobile.png" />
+                          <source
+                            srcSet={getImage(
+                              "thumbnail-form-contact-mobile_dk4rma.png"
+                            )}
+                          />
                           <img
                             loading="lazy"
-                            src="images/thumbnail-form-contact.png"
-                            alt
+                            src={getImage("thumbnail-form-contact_z8wmea.png")}
+                            alt=""
                           />
                         </picture>
                       </div>
