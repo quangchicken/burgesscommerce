@@ -6,11 +6,15 @@ import { getImage } from "../../lib/common"
 import FormContact from "../../presentComponents/FormContact"
 import SubscribeEmail from "../../presentComponents/SubscribeEmail"
 import ReactPlayer from "react-player"
-import RecentResources from "../../presentComponents/RecentResources"
 import CommentCustomer from "../../presentComponents/CommentCustomer"
+import Loadable from "@loadable/component"
 
 import hljs from "highlight.js/lib/core"
 import php from "highlight.js/lib/languages/php"
+
+const RecentResources = Loadable(() =>
+  import("../../presentComponents/RecentResources")
+)
 
 export default function Article1() {
   useEffect(() => {
