@@ -29,14 +29,14 @@ export default function Resource() {
                       <picture>
                         <source
                           media="(min-width: 1024px)"
-                          srcSet={getImage("thumbnail-blogs_wp0mln.png")}
+                          srcSet={getImage("thumbnail-blogs.png")}
                         />
                         <source
                           srcSet={getImage("thumbnail-blogs-mobile.png")}
                         />
                         <img
                           loading="lazy"
-                          src={getImage("thumbnail-blogs_wp0mln.png")}
+                          src={getImage("thumbnail-blogs.png")}
                           alt
                         />
                       </picture>
