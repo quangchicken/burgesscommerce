@@ -2,6 +2,9 @@ import React, { useEffect } from "react"
 import $ from "jquery"
 import { getImage } from "../lib/common"
 
+import "owl.carousel"
+import "owl.carousel/dist/assets/owl.carousel.css"
+
 export default function RecentResources({
   mainTitle = "Recent Resources",
   className = "blog-features line-bottom-left",

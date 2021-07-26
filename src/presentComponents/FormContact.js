@@ -1,10 +1,30 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useForm } from "react-hook-form"
+import $ from "jquery"
+
 import { getImage, encode, REGEX_EMAIL } from "../lib/common"
 
 export default function FormContact({
   className = "form-contact line-bottom-left",
 }) {
+  useEffect(() => {
+    $(".input-js").each(function (e) {
+      $(this)
+        .find("input,textarea")
+        .on("focus", function () {
+          $(this).parent().addClass("active")
+        })
+      $(this)
+        .find("input,textarea")
+        .on("blur", function () {
+          if ($(this).val() !== "") {
+            $(this).parent().addClass("active")
+          } else {
+            $(this).parent().removeClass("active")
+          }
+        })
+    })
+  }, [])
   const {
     register,
     handleSubmit,

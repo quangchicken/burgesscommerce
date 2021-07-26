@@ -24,6 +24,11 @@ export default function RbcMagento() {
       $(".cms-twocols .dropdown .title").not($el).parent().removeClass("active")
       $el.parent().addClass("active")
     })
+
+    $(".timeline .title").click(function (e) {
+      e.preventDefault()
+      $(this).parent().toggleClass("active")
+    })
   }, [])
   return (
     <Layout>

@@ -1,15 +1,19 @@
 import React, { useEffect } from "react"
 import $ from "jquery"
+import Loadable from "@loadable/component"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { getImage } from "../lib/common"
 import Faq from "../presentComponents/Faq"
-import RecentResources from "../presentComponents/RecentResources"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
-import TrustedBy from "../presentComponents/TrustedBy"
 import FormContact from "../presentComponents/FormContact"
 import { Mailchimp } from "../presentComponents/Newsletter"
+
+const TrustedBy = Loadable(() => import("../presentComponents/TrustedBy"))
+const RecentResources = Loadable(() =>
+  import("../presentComponents/RecentResources")
+)
 
 export default function AgencySupport() {
   useEffect(() => {

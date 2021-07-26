@@ -1,14 +1,37 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useForm } from "react-hook-form"
+import $ from "jquery"
+import Loadable from "@loadable/component"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { getImage, encode, REGEX_EMAIL } from "../lib/common"
-import RecentResources from "../presentComponents/RecentResources"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
-import TrustedBy from "../presentComponents/TrustedBy"
+
+const TrustedBy = Loadable(() => import("../presentComponents/TrustedBy"))
+const RecentResources = Loadable(() =>
+  import("../presentComponents/RecentResources")
+)
 
 export default function Contact() {
+  useEffect(() => {
+    $(".input-js").each(function (e) {
+      $(this)
+        .find("input,textarea")
+        .on("focus", function () {
+          $(this).parent().addClass("active")
+        })
+      $(this)
+        .find("input,textarea")
+        .on("blur", function () {
+          if ($(this).val() !== "") {
+            $(this).parent().addClass("active")
+          } else {
+            $(this).parent().removeClass("active")
+          }
+        })
+    })
+  }, [])
   const {
     register,
     handleSubmit,

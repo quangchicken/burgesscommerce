@@ -1,11 +1,13 @@
 import React from "react"
+import Loadable from "@loadable/component"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { getImage } from "../lib/common"
 import FormContact from "../presentComponents/FormContact"
 import SubscribeEmail from "../presentComponents/SubscribeEmail"
-import TrustedBy from "../presentComponents/TrustedBy"
+
+const TrustedBy = Loadable(() => import("../presentComponents/TrustedBy"))
 
 export default function Resource() {
   return (
