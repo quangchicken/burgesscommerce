@@ -55,12 +55,12 @@ export default function FormContact({
               <picture>
                 <source
                   media="(min-width: 768px)"
-                  srcSet={getImage("bg-banner-white_zkei7f.jpg")}
+                  srcSet={getImage("bg-banner-white.jpg")}
                 />
-                <source srcSet={getImage("bg-banner-white_zkei7f.jpg")} />
+                <source srcSet={getImage("bg-banner-white.jpg")} />
                 <img
                   loading="lazy"
-                  src={getImage("bg-banner-white_zkei7f.jpg")}
+                  src={getImage("bg-banner-white.jpg")}
                   alt="bg-banner-white"
                 />
               </picture>
@@ -74,7 +74,7 @@ export default function FormContact({
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("thumbnail-form-contact_z8wmea.png")}
+                        srcSet={getImage("thumbnail-form-contact.png")}
                       />
                       <source
                         srcSet={getImage(
@@ -83,7 +83,7 @@ export default function FormContact({
                       />
                       <img
                         loading="lazy"
-                        src={getImage("thumbnail-form-contact_z8wmea.png")}
+                        src={getImage("thumbnail-form-contact.png")}
                         alt=""
                       />
                     </picture>

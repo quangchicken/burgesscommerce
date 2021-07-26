@@ -1,13 +1,13 @@
 import React from "react"
 import Loadable from "@loadable/component"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import { getImage } from "../lib/common"
-import FormContact from "../presentComponents/FormContact"
-import SubscribeEmail from "../presentComponents/SubscribeEmail"
+import Layout from "../../components/layout"
+import Seo from "../../components/seo"
+import { getImage } from "../../lib/common"
+import FormContact from "../../presentComponents/FormContact"
+import SubscribeEmail from "../../presentComponents/SubscribeEmail"
 
-const TrustedBy = Loadable(() => import("../presentComponents/TrustedBy"))
+const TrustedBy = Loadable(() => import("../../presentComponents/TrustedBy"))
 
 export default function Resource() {
   return (
@@ -17,7 +17,7 @@ export default function Resource() {
         <section
           className="main-banner text-dark text-center"
           style={{
-            backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+            backgroundImage: `url(${getImage("bg-banner-white.jpg")})`,
           }}
         >
           <div className="wrapper">
@@ -82,12 +82,59 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-1_vtefug.jpg")}
+                        srcSet={getImage("blog-post-1.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <source srcSet={getImage("blog-post-1.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-1_vtefug.jpg")}
+                        src={getImage("blog-post-1.jpg")}
+                        alt="blog"
+                      />
+                    </picture>
+                  </a>
+                  <div className="content">
+                    <h6 className="title">
+                      <a href="/resources/the-quick-brown-fox-jumps-over-the-lazy-dog">
+                        The quick brown fox jumps over the lazy dog
+                      </a>
+                    </h6>
+                    <ul className="show-tags">
+                      <li>
+                        <a href="#">Magento</a>
+                      </li>
+                      <li>
+                        <a href="#">Ux</a>
+                      </li>
+                    </ul>
+                    <ul className="show-date">
+                      <li>
+                        <span className="icon">
+                          <i className="icon-calendar" />
+                        </span>
+                        13 Feb 2021
+                      </li>
+                      <li>
+                        <span className="icon">
+                          <i className="icon-time" />
+                        </span>
+                        20 minutes
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-wide-4">
+                <div className="inner">
+                  <a href="#">
+                    <picture>
+                      <source
+                        media="(min-width: 1024px)"
+                        srcSet={getImage("blog-post-2.jpg")}
+                      />
+                      <source srcSet={getImage("blog-post-2.jpg")} />
+                      <img
+                        loading="lazy"
+                        src={getImage("blog-post-2.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -127,12 +174,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-2_k0svpt.jpg")}
+                        srcSet={getImage("blog-post-1.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-2_k0svpt.jpg")} />
+                      <source srcSet={getImage("blog-post-1.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-2_k0svpt.jpg")}
+                        src={getImage("blog-post-1.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -172,12 +219,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-1_vtefug.jpg")}
+                        srcSet={getImage("blog-post-1.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <source srcSet={getImage("blog-post-1.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-1_vtefug.jpg")}
+                        src={getImage("blog-post-1.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -217,12 +264,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-1_vtefug.jpg")}
+                        srcSet={getImage("blog-post-2.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <source srcSet={getImage("blog-post-2.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-1_vtefug.jpg")}
+                        src={getImage("blog-post-2.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -262,12 +309,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-2_k0svpt.jpg")}
+                        srcSet={getImage("blog-post-1.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-2_k0svpt.jpg")} />
+                      <source srcSet={getImage("blog-post-1.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-2_k0svpt.jpg")}
+                        src={getImage("blog-post-1.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -307,12 +354,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-1_vtefug.jpg")}
+                        srcSet={getImage("blog-post-1.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <source srcSet={getImage("blog-post-1.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-1_vtefug.jpg")}
+                        src={getImage("blog-post-1.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -352,12 +399,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-1_vtefug.jpg")}
+                        srcSet={getImage("blog-post-2.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <source srcSet={getImage("blog-post-2.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-1_vtefug.jpg")}
+                        src={getImage("blog-post-2.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -397,12 +444,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-2_k0svpt.jpg")}
+                        srcSet={getImage("blog-post-1.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-2_k0svpt.jpg")} />
+                      <source srcSet={getImage("blog-post-1.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-2_k0svpt.jpg")}
+                        src={getImage("blog-post-1.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -442,12 +489,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-1_vtefug.jpg")}
+                        srcSet={getImage("blog-post-1.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <source srcSet={getImage("blog-post-1.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-1_vtefug.jpg")}
+                        src={getImage("blog-post-1.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -487,12 +534,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-1_vtefug.jpg")}
+                        srcSet={getImage("blog-post-2.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                      <source srcSet={getImage("blog-post-2.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-1_vtefug.jpg")}
+                        src={getImage("blog-post-2.jpg")}
                         alt="blog"
                       />
                     </picture>
@@ -532,57 +579,12 @@ export default function Resource() {
                     <picture>
                       <source
                         media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-2_k0svpt.jpg")}
+                        srcSet={getImage("blog-post-1.jpg")}
                       />
-                      <source srcSet={getImage("blog-post-2_k0svpt.jpg")} />
+                      <source srcSet={getImage("blog-post-1.jpg")} />
                       <img
                         loading="lazy"
-                        src={getImage("blog-post-2_k0svpt.jpg")}
-                        alt="blog"
-                      />
-                    </picture>
-                  </a>
-                  <div className="content">
-                    <h6 className="title">
-                      <a href="#">Quick brown fox jumps over the lazy dog.</a>
-                    </h6>
-                    <ul className="show-tags">
-                      <li>
-                        <a href="#">Magento</a>
-                      </li>
-                      <li>
-                        <a href="#">Ux</a>
-                      </li>
-                    </ul>
-                    <ul className="show-date">
-                      <li>
-                        <span className="icon">
-                          <i className="icon-calendar" />
-                        </span>
-                        13 Feb 2021
-                      </li>
-                      <li>
-                        <span className="icon">
-                          <i className="icon-time" />
-                        </span>
-                        20 minutes
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-wide-4">
-                <div className="inner">
-                  <a href="#">
-                    <picture>
-                      <source
-                        media="(min-width: 1024px)"
-                        srcSet={getImage("blog-post-1_vtefug.jpg")}
-                      />
-                      <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
-                      <img
-                        loading="lazy"
-                        src={getImage("blog-post-1_vtefug.jpg")}
+                        src={getImage("blog-post-1.jpg")}
                         alt="blog"
                       />
                     </picture>

@@ -450,7 +450,7 @@ export default function RbcMagento() {
         <section
           className="text-cols"
           style={{
-            backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+            backgroundImage: `url(${getImage("bg-banner-white.jpg")})`,
           }}
         >
           <div className="wrapper">

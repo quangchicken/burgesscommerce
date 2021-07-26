@@ -266,7 +266,7 @@ const IndexPage = () => {
           <section
             className="banner-with-text banner-thumbnail padding-top padding-bottom"
             style={{
-              backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+              backgroundImage: `url(${getImage("bg-banner-white.jpg")})`,
             }}
           >
             <div className="wrapper">

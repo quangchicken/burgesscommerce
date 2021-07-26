@@ -13,12 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-import hljs from "highlight.js/lib/core"
-import javascript from "highlight.js/lib/languages/javascript"
-
 import Footer from "./footer.js"
-
-hljs.registerLanguage("javascript", javascript)
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

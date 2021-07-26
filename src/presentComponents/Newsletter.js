@@ -16,7 +16,6 @@ export const Mailchimp = ({
     handleSubmit,
     formState: { errors },
   } = useForm()
-  console.log(errors)
   return (
     <MailchimpSubscribe
       url={process.env.GATSBY_ACCESS_MAILCHIMP}
@@ -25,7 +24,6 @@ export const Mailchimp = ({
           <form
             className={errors.email ? "error" : ""}
             onSubmit={handleSubmit(data => {
-              console.log({ data })
               subscribe({
                 EMAIL: data.email,
                 NAME: data.email,

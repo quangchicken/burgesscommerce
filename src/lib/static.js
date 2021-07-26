@@ -1,22 +1,22 @@
-import $ from "jquery"
+// import $ from "jquery"
 
-function getYoutubeId(url) {
-  var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
-  var match = url.match(regExp)
-  if (match && match[2].length === 11) {
-    return match[2]
-  } else {
-    return "error"
-  }
-}
+// function getYoutubeId(url) {
+//   var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
+//   var match = url.match(regExp)
+//   if (match && match[2].length === 11) {
+//     return match[2]
+//   } else {
+//     return "error"
+//   }
+// }
 
-function copyToClipboard(element) {
-  var $temp = $("<input>")
-  $("body").append($temp)
-  $temp.val($(element).text()).select()
-  document.execCommand("copy")
-  $temp.remove()
-}
+// function copyToClipboard(element) {
+//   var $temp = $("<input>")
+//   $("body").append($temp)
+//   $temp.val($(element).text()).select()
+//   document.execCommand("copy")
+//   $temp.remove()
+// }
 
 // $(document).ready(function () {
 // $(".text-cols .text-col .title").click(function (e) {

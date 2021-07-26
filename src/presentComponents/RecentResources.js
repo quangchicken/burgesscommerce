@@ -38,7 +38,7 @@ export default function RecentResources({
     <section
       className={className}
       style={{
-        backgroundImage: `url(${getImage("bg-banner-white_zkei7f.jpg")})`,
+        backgroundImage: `url(${getImage("bg-banner-white.jpg")})`,
       }}
     >
       <div className="wrapper">
@@ -52,12 +52,12 @@ export default function RecentResources({
                 <picture>
                   <source
                     media="(min-width: 1024px)"
-                    srcSet={getImage("blog-post-1_vtefug.jpg")}
+                    srcSet={getImage("blog-post-1.jpg")}
                   />
-                  <source srcSet={getImage("blog-post-1_vtefug.jpg")} />
+                  <source srcSet={getImage("blog-post-1.jpg")} />
                   <img
                     loading="lazy"
-                    src={getImage("blog-post-1_vtefug.jpg")}
+                    src={getImage("blog-post-1.jpg")}
                     alt="blog"
                   />
                 </picture>
@@ -97,12 +97,12 @@ export default function RecentResources({
                 <picture>
                   <source
                     media="(min-width: 1024px)"
-                    srcSet={getImage("blog-post-2_k0svpt.jpg")}
+                    srcSet={getImage("blog-post-2.jpg")}
                   />
-                  <source srcSet={getImage("blog-post-2_k0svpt.jpg")} />
+                  <source srcSet={getImage("blog-post-2.jpg")} />
                   <img
                     loading="lazy"
-                    src={getImage("blog-post-2_k0svpt.jpg")}
+                    src={getImage("blog-post-2.jpg")}
                     alt="blog"
                   />
                 </picture>
@@ -142,12 +142,12 @@ export default function RecentResources({
                 <picture>
                   <source
                     media="(min-width: 1024px)"
-                    srcSet={getImage("blog-post-3_t6eada.jpg")}
+                    srcSet={getImage("blog-post-3.jpg")}
                   />
-                  <source srcSet={getImage("blog-post-3_t6eada.jpg")} />
+                  <source srcSet={getImage("blog-post-3.jpg")} />
                   <img
                     loading="lazy"
-                    src={getImage("blog-post-3_t6eada.jpg")}
+                    src={getImage("blog-post-3.jpg")}
                     alt="blog"
                   />
                 </picture>
